@@ -391,15 +391,16 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -2;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .hero-bg-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
-  filter: brightness(0.72) contrast(1.05);
+  object-position: center 25%;
+  filter: brightness(0.85) contrast(1.05);
 }
 
 .hero-overlay {
@@ -410,11 +411,12 @@ button {
   bottom: 0;
   background: linear-gradient(
     180deg,
-    rgba(11, 11, 11, 0.5) 0%,
-    rgba(11, 11, 11, 0.2) 40%,
-    rgba(11, 11, 11, 0.85) 85%,
-    var(--bg-main) 100%
+    rgba(11, 11, 11, 0.45) 0%,
+    rgba(11, 11, 11, 0.15) 35%,
+    rgba(11, 11, 11, 0.75) 80%,
+    #0b0b0b 100%
   );
+  z-index: 1;
 }
 
 .hero-content {
@@ -554,15 +556,16 @@ button {
 
 /* Giant Watermark */
 .hero-watermark {
-  font-size: clamp(80px, 15vw, 210px);
+  font-size: clamp(90px, 17vw, 240px);
   font-weight: 800;
   letter-spacing: -0.05em;
-  color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.95);
   text-align: center;
-  line-height: 0.75;
+  line-height: 0.78;
   user-select: none;
   pointer-events: none;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: -30px;
   position: relative;
   z-index: 2;
 }
@@ -645,17 +648,30 @@ button {
   margin-bottom: 28px;
 }
 
-.perspective-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+.perspective-editorial {
+  font-size: clamp(26px, 3.2vw, 42px);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.perspective-editorial .dimmed {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 400;
+}
+
+.perspective-subtext {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 620px;
   margin-bottom: 36px;
 }
 
-.perspective-body p {
-  font-size: 16.5px;
-  line-height: 1.65;
-  color: var(--text-secondary);
+.perspective-cta {
+  margin-top: 10px;
 }
 
 /* Ticker Marquee */
@@ -697,93 +713,25 @@ button {
   font-size: 28px;
 }
 
-/* Gallery Slider */
-.gallery-container {
-  margin-top: 40px;
-}
-
-.gallery-slider {
-  position: relative;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.gallery-slides {
-  position: relative;
-  width: 100%;
-  height: clamp(340px, 50vw, 680px);
-}
-
-.gallery-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-}
-
-.gallery-slide.active {
-  opacity: 1;
-}
-
-.gallery-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery-controls {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  right: 24px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  z-index: 10;
-}
-
-.slider-btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(18, 18, 18, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.perspective-editorial {
+  font-size: clamp(24px, 3.2vw, 40px);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.perspective-editorial .dimmed {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.perspective-subtext {
   font-size: 16px;
-  transition: all var(--duration-fast);
-}
-
-.slider-btn:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.slider-progress-bar {
-  flex-grow: 1;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
-  position: relative;
-  overflow: hidden;
-}
-
-.slider-progress-indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 33.33%;
-  background-color: var(--accent);
-  transition: left 0.4s ease-out, width 0.4s ease-out;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-bottom: 36px;
 }
 
 /* ==========================================================================
@@ -866,11 +814,27 @@ button {
 }
 
 /* ==========================================================================
-   The Collection (Filter Tabs & Property Grid)
+   The Collection — Property Rail / Slider & Hover Design
    ========================================================================== */
 
+.collection-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.collection-header-note {
+  max-width: 440px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
 .filter-tabs-wrapper {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
   overflow-x: auto;
   padding-bottom: 8px;
 }
@@ -878,7 +842,7 @@ button {
 .filter-tabs {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background: var(--bg-card);
   padding: 6px;
   border-radius: var(--radius-pill);
@@ -891,6 +855,9 @@ button {
   font-size: 13.5px;
   font-weight: 600;
   color: var(--text-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
   transition: all var(--duration-fast);
   white-space: nowrap;
 }
@@ -904,168 +871,264 @@ button {
   color: #0b0b0b;
 }
 
-.properties-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  gap: 32px;
+/* Property Rail Horizontal Slider */
+.property-rail-wrapper {
+  overflow: hidden;
+  position: relative;
+  margin: 0 -16px;
+  padding: 10px 16px 20px;
+}
+
+.property-rail {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  padding-bottom: 10px;
+}
+
+.property-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.property-rail:active {
+  cursor: grabbing;
 }
 
 .property-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  transition: transform var(--duration-normal) var(--ease-out), border-color var(--duration-normal), box-shadow var(--duration-normal);
-  display: flex;
-  flex-direction: column;
-}
-
-.property-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6);
-}
-
-.property-image-container {
+  flex: 0 0 clamp(320px, 32vw, 440px);
+  height: clamp(500px, 48vw, 620px);
   position: relative;
-  height: 280px;
+  border-radius: 20px;
   overflow: hidden;
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.property-img {
+/* Rest View */
+.property-card-rest {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s ease;
+}
+
+.property-card-rest .property-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--duration-slow) var(--ease-out);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.property-card:hover .property-img {
+.property-card:hover .property-card-rest .property-img {
   transform: scale(1.05);
 }
 
-.property-badges {
+.property-card-shade {
   position: absolute;
-  top: 16px;
-  left: 16px;
-  display: flex;
-  gap: 8px;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 11, 11, 0.32) 0%,
+    rgba(11, 11, 11, 0) 30%,
+    rgba(11, 11, 11, 0.1) 50%,
+    rgba(11, 11, 11, 0.9) 100%
+  );
+}
+
+.status-glass-pill {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: rgba(11, 11, 11, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
   z-index: 2;
 }
 
-.status-pill {
-  padding: 4px 10px;
-  border-radius: var(--radius-pill);
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  backdrop-filter: blur(8px);
-}
-
-.status-pill.sale {
-  background: rgba(29, 110, 245, 0.85);
-  color: #ffffff;
-}
-
-.status-pill.rent {
-  background: rgba(255, 255, 255, 0.85);
-  color: #0b0b0b;
-}
-
-.status-pill.soon {
-  background: rgba(18, 18, 18, 0.85);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.location-pill {
-  background: rgba(18, 18, 18, 0.75);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 4px 10px;
-  border-radius: var(--radius-pill);
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-secondary);
-}
-
-.property-price-tag {
+.property-caption {
   position: absolute;
-  bottom: 16px;
-  right: 16px;
-  background: rgba(11, 11, 11, 0.85);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 6px 14px;
-  border-radius: var(--radius-pill);
-  font-size: 14px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: -0.02em;
-}
-
-.property-info {
-  padding: 24px;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  gap: 8px;
 }
 
-.property-header {
-  margin-bottom: 12px;
-}
-
-.property-title {
-  font-size: 20px;
+.property-caption .property-title {
+  font-size: 28px;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.02em;
-  margin-bottom: 4px;
 }
 
-.property-type {
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
-.property-desc {
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  margin-bottom: 20px;
-  flex-grow: 1;
-}
-
-.property-specs {
+.property-meta-row {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  padding-top: 16px;
-  border-top: 1px solid var(--border-subtle);
-  margin-bottom: 16px;
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.78);
 }
 
-.spec-dot {
-  color: var(--text-dim);
-}
-
-.property-action {
+/* Hover Detail View (Solid Blue Accent Background from Screenshot 5) */
+.property-card-detail {
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent);
+  padding: 36px 30px 30px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(10px);
+  z-index: 5;
 }
 
-.property-link {
+.property-card:hover .property-card-detail {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.hover-heading .hover-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.hover-heading .hover-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hover-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.property-view-pill {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  color: #0b0b0b;
   font-size: 13.5px;
-  font-weight: 600;
-  color: var(--accent);
-  transition: transform var(--duration-fast);
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-bottom: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.property-card:hover .property-link {
-  transform: translateX(4px);
+.property-view-pill:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.hover-desc {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.94);
+  margin-bottom: 24px;
+}
+
+.hover-rule {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+}
+
+.hover-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hover-spec-divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Controls */
+.collection-controls-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.rail-nav-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.rail-nav-btn:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0b0b0b;
+  transform: scale(1.05);
+}
+
+.rail-nav-btn.active-light {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0b0b0b;
+}
+
+.rail-progress-bar {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rail-progress-indicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  width: 35%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: left 0.25s cubic-bezier(0.16, 1, 0.3, 1), width 0.25s ease;
 }
 
 /* ==========================================================================
@@ -1979,16 +2042,21 @@ button {
       <div class="container">
         <div class="perspective-grid">
           <div class="perspective-left">
-            <span class="section-meta-label">THE AUREVANT PERSPECTIVE</span>
-            <span class="section-meta-year">&copy;2026</span>
+            <div class="badge-pill" style="margin-bottom: 14px;">
+              <span class="badge-dot"></span>
+              <span class="badge-text">THE AUREVANT PERSPECTIVE</span>
+            </div>
+            <div style="font-size: 34px; font-weight: 500; color: #ffffff; letter-spacing: -0.02em;">&copy;2026</div>
           </div>
 
           <div class="perspective-right">
             <h2 class="section-heading-large">More than an address. A way of living.</h2>
-            <div class="perspective-body">
-              <p>The right home is never just about square footage or a view. It is about light, atmosphere, possibility, and the feeling you have when you arrive.</p>
-              <p>We look beyond the listing to understand what makes a place meaningful—and help you find the one that feels right.</p>
-            </div>
+            <p class="perspective-editorial">
+              The right home is never <span class="dimmed">just about square footage or a view. It is about light, atmosphere, possibility, and the feeling you have when you step inside.</span>
+            </p>
+            <p class="perspective-subtext">
+              We look beyond the listing to understand what makes a place meaningful&mdash;and help you find the one that feels right.
+            </p>
             <div class="perspective-cta">
               <a href="#services" class="btn btn-primary" id="discover-aurevant-btn">Discover AUREVANT</a>
             </div>
@@ -2015,32 +2083,6 @@ button {
           <span class="ticker-dot">&bull;</span>
           <span class="ticker-item">Personal Guidance</span>
           <span class="ticker-dot">&bull;</span>
-        </div>
-      </div>
-
-      <!-- Luxury Interactive Gallery Carousel -->
-      <div class="container gallery-container">
-        <div class="gallery-slider" id="perspective-slider">
-          <div class="gallery-slides">
-            <div class="gallery-slide active">
-              <img src="https://framerusercontent.com/images/pN1278tTIxwaqGnOvdQMBm9nWMs.jpg?width=2200&height=1467" alt="Poolside illuminated villa terrace at twilight">
-            </div>
-            <div class="gallery-slide">
-              <img src="https://framerusercontent.com/images/6cPgFmSEJzKjwZhGDaOlPKyc.jpg?width=2200&height=1711" alt="Contemporary luxury glass estate exterior">
-            </div>
-            <div class="gallery-slide">
-              <img src="https://framerusercontent.com/images/zUGxMz5cGoU2bqdnAF1YD0j2lk.jpg?width=2200&height=1467" alt="Modern villa terrace with panoramic view">
-            </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <div class="gallery-controls">
-            <button class="slider-btn prev-btn" id="slider-prev" aria-label="Previous slide">&#x2190;</button>
-            <div class="slider-progress-bar">
-              <div class="slider-progress-indicator" id="slider-progress"></div>
-            </div>
-            <button class="slider-btn next-btn" id="slider-next" aria-label="Next slide">&#x2192;</button>
-          </div>
         </div>
       </div>
     </section>
@@ -2077,13 +2119,18 @@ button {
       </div>
     </section>
 
-    <!-- THE COLLECTION (PROPERTIES GRID & FILTERING) -->
+    <!-- THE COLLECTION (PROPERTIES HORIZONTAL RAIL SLIDER & HOVER DESIGN) -->
     <section class="section collection-section" id="properties">
       <div class="container">
-        <div class="section-header">
-          <span class="eyebrow-tag">THE COLLECTION</span>
-          <h2 class="section-title">Exceptional places, thoughtfully selected.</h2>
-          <p class="section-desc">
+        <div class="collection-header-row">
+          <div>
+            <div class="badge-pill" style="margin-bottom: 14px;">
+              <span class="badge-dot"></span>
+              <span class="badge-text">The Collection</span>
+            </div>
+            <h2 class="section-title">Exceptional places,<br>thoughtfully selected.</h2>
+          </div>
+          <p class="collection-header-note">
             From architectural statements to quiet retreats, our collection is curated for people who value character, quality, and a lasting sense of place.
           </p>
         </div>
@@ -2091,193 +2138,250 @@ button {
         <!-- Filter Tabs -->
         <div class="filter-tabs-wrapper">
           <div class="filter-tabs" role="tablist">
-            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Properties</button>
-            <button class="filter-tab" data-filter="contemporary" role="tab" aria-selected="false">Contemporary Homes</button>
-            <button class="filter-tab" data-filter="estate" role="tab" aria-selected="false">Private Estates</button>
-            <button class="filter-tab" data-filter="waterfront" role="tab" aria-selected="false">Waterfront Living</button>
-            <button class="filter-tab" data-filter="investment" role="tab" aria-selected="false">Investment Properties</button>
+            <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Properties</button>
+            <button type="button" class="filter-tab" data-filter="contemporary" role="tab" aria-selected="false">Contemporary Homes</button>
+            <button type="button" class="filter-tab" data-filter="estate" role="tab" aria-selected="false">Private Estates</button>
+            <button type="button" class="filter-tab" data-filter="waterfront" role="tab" aria-selected="false">Waterfront Living</button>
+            <button type="button" class="filter-tab" data-filter="investment" role="tab" aria-selected="false">Investment Properties</button>
           </div>
         </div>
 
-        <!-- Property Grid -->
-        <div class="properties-grid" id="properties-grid">
-          <!-- Property 1 -->
-          <article class="property-card" data-category="contemporary estate">
-            <div class="property-image-container">
-              <img src="https://framerusercontent.com/images/bT30OLBaoYzJyoeSOctQfPTT0.jpg?width=1300&height=1950" alt="The Alder House" class="property-img">
-              <div class="property-badges">
-                <span class="status-pill sale">For Sale</span>
-                <span class="location-pill">Hillside Quarter</span>
+        <!-- Property Rail Slider -->
+        <div class="property-rail-wrapper">
+          <div class="property-rail" id="property-rail">
+            <!-- Property 1: The Alder House -->
+            <article class="property-card" data-category="contemporary estate">
+              <div class="property-card-rest">
+                <img src="https://framerusercontent.com/images/zUGxMz5cGoU2bqdnAF1YD0j2lk.jpg?width=2200&height=1467" alt="The Alder House" class="property-img">
+                <div class="property-card-shade"></div>
+                <div class="status-glass-pill">For Sale</div>
+                <div class="property-caption">
+                  <h3 class="property-title">The Alder House</h3>
+                  <div class="property-meta-row">
+                    <span>Hillside Quarter</span>
+                    <span>&bull;</span>
+                    <span>$4,850,000</span>
+                  </div>
+                </div>
               </div>
-              <div class="property-price-tag">$4,850,000</div>
-            </div>
-            <div class="property-info">
-              <div class="property-header">
-                <h3 class="property-title">The Alder House</h3>
-                <span class="property-type">Contemporary Residence</span>
+              <div class="property-card-detail">
+                <div class="hover-heading">
+                  <h3 class="hover-title">The Alder House</h3>
+                  <span class="hover-subtitle">Contemporary Residence</span>
+                </div>
+                <div class="hover-body">
+                  <a href="#contact" class="property-view-pill">View Property</a>
+                  <p class="hover-desc">A light-filled home with generous living spaces, natural finishes, and a seamless connection to the outdoors.</p>
+                  <div class="hover-rule"></div>
+                  <div class="hover-specs">
+                    <span>3,900 sq ft</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>4 Beds</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>3 Baths</span>
+                  </div>
+                </div>
               </div>
-              <p class="property-desc">A light-filled home with generous living spaces, natural finishes, and a seamless connection to the outdoors.</p>
-              <div class="property-specs">
-                <span>3,900 sq ft</span>
-                <span class="spec-dot">&bull;</span>
-                <span>4 Beds</span>
-                <span class="spec-dot">&bull;</span>
-                <span>3 Baths</span>
-              </div>
-              <div class="property-action">
-                <a href="#contact" class="property-link">View Property &#x2192;</a>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Property 2 -->
-          <article class="property-card" data-category="contemporary investment">
-            <div class="property-image-container">
-              <img src="https://framerusercontent.com/images/fBdZu8xzzQ6b7LO3OHsBwblMqwo.jpg?width=1300&height=1950" alt="Maison Vale" class="property-img">
-              <div class="property-badges">
-                <span class="status-pill rent">For Rent</span>
-                <span class="location-pill">Old Town</span>
+            <!-- Property 2: Maison Vale -->
+            <article class="property-card" data-category="contemporary investment">
+              <div class="property-card-rest">
+                <img src="https://framerusercontent.com/images/bT30OLBaoYzJyoeSOctQfPTT0.jpg?width=1300&height=1950" alt="Maison Vale" class="property-img">
+                <div class="property-card-shade"></div>
+                <div class="status-glass-pill">For Rent</div>
+                <div class="property-caption">
+                  <h3 class="property-title">Maison Vale</h3>
+                  <div class="property-meta-row">
+                    <span>Old Town</span>
+                    <span>&bull;</span>
+                    <span>$9,500 / month</span>
+                  </div>
+                </div>
               </div>
-              <div class="property-price-tag">$9,500 / month</div>
-            </div>
-            <div class="property-info">
-              <div class="property-header">
-                <h3 class="property-title">Maison Vale</h3>
-                <span class="property-type">City Residence</span>
+              <div class="property-card-detail">
+                <div class="hover-heading">
+                  <h3 class="hover-title">Maison Vale</h3>
+                  <span class="hover-subtitle">City Residence</span>
+                </div>
+                <div class="hover-body">
+                  <a href="#contact" class="property-view-pill">View Property</a>
+                  <p class="hover-desc">A refined urban home defined by clean lines, considered proportions, and effortless access to the city.</p>
+                  <div class="hover-rule"></div>
+                  <div class="hover-specs">
+                    <span>1,650 sq ft</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>2 Beds</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>2 Baths</span>
+                  </div>
+                </div>
               </div>
-              <p class="property-desc">A refined urban home defined by clean lines, considered proportions, and effortless access to the city.</p>
-              <div class="property-specs">
-                <span>1,650 sq ft</span>
-                <span class="spec-dot">&bull;</span>
-                <span>2 Beds</span>
-                <span class="spec-dot">&bull;</span>
-                <span>2 Baths</span>
-              </div>
-              <div class="property-action">
-                <a href="#contact" class="property-link">View Property &#x2192;</a>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Property 3 -->
-          <article class="property-card" data-category="waterfront estate">
-            <div class="property-image-container">
-              <img src="https://framerusercontent.com/images/Zxka7W1gRTQks3HVV1UBXVpZVU0.jpg?width=1300&height=1792" alt="The Coastline Residence" class="property-img">
-              <div class="property-badges">
-                <span class="status-pill soon">Coming Soon</span>
-                <span class="location-pill">North Shore</span>
+            <!-- Property 3: The Coastline Residence -->
+            <article class="property-card" data-category="waterfront estate">
+              <div class="property-card-rest">
+                <img src="https://framerusercontent.com/images/fBdZu8xzzQ6b7LO3OHsBwblMqwo.jpg?width=1300&height=1950" alt="The Coastline Residence" class="property-img">
+                <div class="property-card-shade"></div>
+                <div class="status-glass-pill">Coming Soon</div>
+                <div class="property-caption">
+                  <h3 class="property-title">The Coastline Residence</h3>
+                  <div class="property-meta-row">
+                    <span>North Shore</span>
+                    <span>&bull;</span>
+                    <span>Price on request</span>
+                  </div>
+                </div>
               </div>
-              <div class="property-price-tag">Price on request</div>
-            </div>
-            <div class="property-info">
-              <div class="property-header">
-                <h3 class="property-title">The Coastline Residence</h3>
-                <span class="property-type">Coastal Estate</span>
+              <div class="property-card-detail">
+                <div class="hover-heading">
+                  <h3 class="hover-title">The Coastline Residence</h3>
+                  <span class="hover-subtitle">Coastal Estate</span>
+                </div>
+                <div class="hover-body">
+                  <a href="#contact" class="property-view-pill">View Property</a>
+                  <p class="hover-desc">A private retreat with open views, generous outdoor space, and a relaxed approach to modern living.</p>
+                  <div class="hover-rule"></div>
+                  <div class="hover-specs">
+                    <span>6,200 sq ft</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>5 Beds</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>5 Baths</span>
+                  </div>
+                </div>
               </div>
-              <p class="property-desc">A private retreat with open views, generous outdoor space, and a relaxed approach to modern living.</p>
-              <div class="property-specs">
-                <span>6,200 sq ft</span>
-                <span class="spec-dot">&bull;</span>
-                <span>5 Beds</span>
-                <span class="spec-dot">&bull;</span>
-                <span>5 Baths</span>
-              </div>
-              <div class="property-action">
-                <a href="#contact" class="property-link">View Property &#x2192;</a>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Property 4 -->
-          <article class="property-card" data-category="estate">
-            <div class="property-image-container">
-              <img src="https://framerusercontent.com/images/JkpceeiFoE460QT7BQl8v9Q.jpg?width=1300&height=1950" alt="Halden Ridge" class="property-img">
-              <div class="property-badges">
-                <span class="status-pill sale">For Sale</span>
-                <span class="location-pill">Pine Valley</span>
+            <!-- Property 4: Halden Ridge -->
+            <article class="property-card" data-category="estate">
+              <div class="property-card-rest">
+                <img src="https://framerusercontent.com/images/Zxka7W1gRTQks3HVV1UBXVpZVU0.jpg?width=1300&height=1792" alt="Halden Ridge" class="property-img">
+                <div class="property-card-shade"></div>
+                <div class="status-glass-pill">For Sale</div>
+                <div class="property-caption">
+                  <h3 class="property-title">Halden Ridge</h3>
+                  <div class="property-meta-row">
+                    <span>Pine Valley</span>
+                    <span>&bull;</span>
+                    <span>$7,200,000</span>
+                  </div>
+                </div>
               </div>
-              <div class="property-price-tag">$7,200,000</div>
-            </div>
-            <div class="property-info">
-              <div class="property-header">
-                <h3 class="property-title">Halden Ridge</h3>
-                <span class="property-type">Private Estate</span>
+              <div class="property-card-detail">
+                <div class="hover-heading">
+                  <h3 class="hover-title">Halden Ridge</h3>
+                  <span class="hover-subtitle">Private Estate</span>
+                </div>
+                <div class="hover-body">
+                  <a href="#contact" class="property-view-pill">View Property</a>
+                  <p class="hover-desc">A hillside estate with long views, layered terraces, and complete privacy within easy reach of the city.</p>
+                  <div class="hover-rule"></div>
+                  <div class="hover-specs">
+                    <span>7,400 sq ft</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>5 Beds</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>6 Baths</span>
+                  </div>
+                </div>
               </div>
-              <p class="property-desc">A hillside estate with long views, layered terraces, and complete privacy within easy reach of the city.</p>
-              <div class="property-specs">
-                <span>7,400 sq ft</span>
-                <span class="spec-dot">&bull;</span>
-                <span>5 Beds</span>
-                <span class="spec-dot">&bull;</span>
-                <span>6 Baths</span>
-              </div>
-              <div class="property-action">
-                <a href="#contact" class="property-link">View Property &#x2192;</a>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Property 5 -->
-          <article class="property-card" data-category="contemporary investment">
-            <div class="property-image-container">
-              <img src="https://framerusercontent.com/images/e8mCjIu7E91PpwD119dWtKeE5w.jpg?width=1300&height=1733" alt="Cedar Hollow" class="property-img">
-              <div class="property-badges">
-                <span class="status-pill sale">For Sale</span>
-                <span class="location-pill">Pine Valley</span>
+            <!-- Property 5: Cedar Hollow -->
+            <article class="property-card" data-category="contemporary investment">
+              <div class="property-card-rest">
+                <img src="https://framerusercontent.com/images/JkpceeiFoE460QT7BQl8v9Q.jpg?width=1300&height=1950" alt="Cedar Hollow" class="property-img">
+                <div class="property-card-shade"></div>
+                <div class="status-glass-pill">For Sale</div>
+                <div class="property-caption">
+                  <h3 class="property-title">Cedar Hollow</h3>
+                  <div class="property-meta-row">
+                    <span>Pine Valley</span>
+                    <span>&bull;</span>
+                    <span>$1,950,000</span>
+                  </div>
+                </div>
               </div>
-              <div class="property-price-tag">$1,950,000</div>
-            </div>
-            <div class="property-info">
-              <div class="property-header">
-                <h3 class="property-title">Cedar Hollow</h3>
-                <span class="property-type">Woodland Retreat</span>
+              <div class="property-card-detail">
+                <div class="hover-heading">
+                  <h3 class="hover-title">Cedar Hollow</h3>
+                  <span class="hover-subtitle">Woodland Retreat</span>
+                </div>
+                <div class="hover-body">
+                  <a href="#contact" class="property-view-pill">View Property</a>
+                  <p class="hover-desc">A timber-clad retreat among the trees, designed for quiet weekends and slow mornings.</p>
+                  <div class="hover-rule"></div>
+                  <div class="hover-specs">
+                    <span>2,300 sq ft</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>3 Beds</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>2 Baths</span>
+                  </div>
+                </div>
               </div>
-              <p class="property-desc">A timber-clad retreat among the trees, designed for quiet weekends and slow mornings.</p>
-              <div class="property-specs">
-                <span>2,300 sq ft</span>
-                <span class="spec-dot">&bull;</span>
-                <span>3 Beds</span>
-                <span class="spec-dot">&bull;</span>
-                <span>2 Baths</span>
-              </div>
-              <div class="property-action">
-                <a href="#contact" class="property-link">View Property &#x2192;</a>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Property 6 -->
-          <article class="property-card" data-category="waterfront investment">
-            <div class="property-image-container">
-              <img src="https://framerusercontent.com/images/zUGxMz5cGoU2bqdnAF1YD0j2lk.jpg?width=2200&height=1467" alt="Quay House" class="property-img">
-              <div class="property-badges">
-                <span class="status-pill sale">For Sale</span>
-                <span class="location-pill">Harbour District</span>
+            <!-- Property 6: Quay House -->
+            <article class="property-card" data-category="waterfront investment">
+              <div class="property-card-rest">
+                <img src="https://framerusercontent.com/images/e8mCjIu7E91PpwD119dWtKeE5w.jpg?width=1300&height=1733" alt="Quay House" class="property-img">
+                <div class="property-card-shade"></div>
+                <div class="status-glass-pill">For Sale</div>
+                <div class="property-caption">
+                  <h3 class="property-title">Quay House</h3>
+                  <div class="property-meta-row">
+                    <span>Harbour District</span>
+                    <span>&bull;</span>
+                    <span>$3,400,000</span>
+                  </div>
+                </div>
               </div>
-              <div class="property-price-tag">$3,400,000</div>
-            </div>
-            <div class="property-info">
-              <div class="property-header">
-                <h3 class="property-title">Quay House</h3>
-                <span class="property-type">Waterfront Home</span>
+              <div class="property-card-detail">
+                <div class="hover-heading">
+                  <h3 class="hover-title">Quay House</h3>
+                  <span class="hover-subtitle">Waterfront Home</span>
+                </div>
+                <div class="hover-body">
+                  <a href="#contact" class="property-view-pill">View Property</a>
+                  <p class="hover-desc">A waterside home with its own mooring, calm interiors, and evening light across the harbour.</p>
+                  <div class="hover-rule"></div>
+                  <div class="hover-specs">
+                    <span>3,100 sq ft</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>4 Beds</span>
+                    <div class="hover-spec-divider"></div>
+                    <span>4 Baths</span>
+                  </div>
+                </div>
               </div>
-              <p class="property-desc">A waterside home with its own mooring, calm interiors, and evening light across the harbour.</p>
-              <div class="property-specs">
-                <span>3,100 sq ft</span>
-                <span class="spec-dot">&bull;</span>
-                <span>4 Beds</span>
-                <span class="spec-dot">&bull;</span>
-                <span>4 Baths</span>
-              </div>
-              <div class="property-action">
-                <a href="#contact" class="property-link">View Property &#x2192;</a>
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
+        </div>
+
+        <!-- Rail Controls (Sided Open Triangle Buttons & Progress Bar) -->
+        <div class="collection-controls-row">
+          <button type="button" class="rail-nav-btn prev" id="rail-prev" aria-label="Previous properties">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="transform: scaleX(-1);">
+              <path d="M5 2.5 L9.5 7 L5 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+
+          <div class="rail-progress-bar">
+            <div class="rail-progress-indicator" id="rail-progress-indicator"></div>
+          </div>
+
+          <button type="button" class="rail-nav-btn next active-light" id="rail-next" aria-label="Next properties">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M5 2.5 L9.5 7 L5 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
         </div>
 
         <div class="section-footer-cta">
-          <a href="#properties" class="btn btn-secondary">View All Properties</a>
+          <a href="#contact" class="btn btn-secondary">View All Properties</a>
         </div>
       </div>
     </section>
@@ -2733,8 +2837,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLiveClock();
   initNavbarScroll();
   initMobileMenu();
-  initGallerySlider();
-  initPropertyFilter();
+  initPropertyRail();
   initServicesAccordion();
   initBackToTop();
   initStatsCounter();
@@ -2822,105 +2925,149 @@ function initMobileMenu() {
 }
 
 /**
- * 4. Interactive Gallery Slider with Progress Bar
+ * 4. Property Collection Rail Slider with Sided Open Triangle Nav, Progress Bar & Filters
  */
-function initGallerySlider() {
-  const slider = document.getElementById('perspective-slider');
-  if (!slider) return;
+function initPropertyRail() {
+  const rail = document.getElementById('property-rail');
+  if (!rail) return;
 
-  const slides = slider.querySelectorAll('.gallery-slide');
-  const prevBtn = document.getElementById('slider-prev');
-  const nextBtn = document.getElementById('slider-next');
-  const progressBar = document.getElementById('slider-progress');
-
-  if (!slides.length) return;
-
-  let currentIndex = 0;
-  const totalSlides = slides.length;
-  let autoplayTimer = null;
-
-  function showSlide(index) {
-    if (index < 0) {
-      currentIndex = totalSlides - 1;
-    } else if (index >= totalSlides) {
-      currentIndex = 0;
-    } else {
-      currentIndex = index;
-    }
-
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === currentIndex);
-    });
-
-    if (progressBar) {
-      const step = 100 / totalSlides;
-      progressBar.style.width = `${step}%`;
-      progressBar.style.left = `${currentIndex * step}%`;
-    }
-  }
-
-  function nextSlide() {
-    showSlide(currentIndex + 1);
-  }
-
-  function prevSlide() {
-    showSlide(currentIndex - 1);
-  }
-
-  if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetAutoplay(); });
-  if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetAutoplay(); });
-
-  function startAutoplay() {
-    autoplayTimer = setInterval(nextSlide, 5000);
-  }
-
-  function resetAutoplay() {
-    clearInterval(autoplayTimer);
-    startAutoplay();
-  }
-
-  slider.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
-  slider.addEventListener('mouseleave', () => startAutoplay());
-
-  showSlide(0);
-  startAutoplay();
-}
-
-/**
- * 5. Property Collection Filtering
- */
-function initPropertyFilter() {
+  const prevBtn = document.getElementById('rail-prev');
+  const nextBtn = document.getElementById('rail-next');
+  const indicator = document.getElementById('rail-progress-indicator');
   const tabs = document.querySelectorAll('.filter-tab');
-  const cards = document.querySelectorAll('.property-card');
+  const cards = rail.querySelectorAll('.property-card');
 
-  if (!tabs.length || !cards.length) return;
+  // Compute scroll step based on first visible card width + gap
+  function getScrollStep() {
+    const firstCard = rail.querySelector('.property-card:not([style*="display: none"])');
+    if (firstCard) {
+      return firstCard.offsetWidth + 24; // width + gap
+    }
+    return 440;
+  }
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => {
-        t.classList.remove('active');
-        t.setAttribute('aria-selected', 'false');
-      });
-      tab.classList.add('active');
-      tab.setAttribute('aria-selected', 'true');
+  // Update progress bar & button active states
+  function updateRailState() {
+    const maxScroll = rail.scrollWidth - rail.clientWidth;
+    const scrollLeft = rail.scrollLeft;
 
-      const filter = tab.getAttribute('data-filter');
+    if (maxScroll <= 0) {
+      if (indicator) {
+        indicator.style.width = '100%';
+        indicator.style.left = '0%';
+      }
+      if (prevBtn) prevBtn.classList.remove('active-light');
+      if (nextBtn) nextBtn.classList.remove('active-light');
+      return;
+    }
 
-      cards.forEach(card => {
-        const categories = (card.getAttribute('data-category') || '').split(' ');
-        if (filter === 'all' || categories.includes(filter)) {
-          card.style.display = 'flex';
-          card.style.opacity = '0';
-          setTimeout(() => {
-            card.style.transition = 'opacity 0.4s ease';
-            card.style.opacity = '1';
-          }, 30);
-        } else {
-          card.style.display = 'none';
-        }
+    const visibleRatio = rail.clientWidth / rail.scrollWidth;
+    const indicatorWidthPct = Math.max(15, Math.min(50, visibleRatio * 100));
+    const scrollRatio = Math.max(0, Math.min(1, scrollLeft / maxScroll));
+    const indicatorLeftPct = scrollRatio * (100 - indicatorWidthPct);
+
+    if (indicator) {
+      indicator.style.width = `${indicatorWidthPct}%`;
+      indicator.style.left = `${indicatorLeftPct}%`;
+    }
+
+    if (prevBtn) {
+      if (scrollLeft > 20) {
+        prevBtn.classList.add('active-light');
+      } else {
+        prevBtn.classList.remove('active-light');
+      }
+    }
+
+    if (nextBtn) {
+      if (scrollLeft < maxScroll - 20) {
+        nextBtn.classList.add('active-light');
+      } else {
+        nextBtn.classList.remove('active-light');
+      }
+    }
+  }
+
+  // Previous & Next button handlers
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      rail.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      rail.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+    });
+  }
+
+  // Mouse drag-to-scroll support
+  let isDown = false;
+  let startX = 0;
+  let scrollStart = 0;
+
+  rail.addEventListener('mousedown', (e) => {
+    if (e.button !== 0) return;
+    isDown = true;
+    rail.style.cursor = 'grabbing';
+    startX = e.pageX - rail.offsetLeft;
+    scrollStart = rail.scrollLeft;
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (isDown) {
+      isDown = false;
+      rail.style.cursor = '';
+    }
+  });
+
+  rail.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - rail.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    rail.scrollLeft = scrollStart - walk;
+  });
+
+  rail.addEventListener('scroll', updateRailState, { passive: true });
+  window.addEventListener('resize', updateRailState, { passive: true });
+
+  // Filter Tabs handling
+  if (tabs.length && cards.length) {
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        const filter = tab.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          const categories = (card.getAttribute('data-category') || '').split(' ');
+          if (filter === 'all' || categories.includes(filter)) {
+            card.style.display = 'flex';
+            card.style.opacity = '0';
+            setTimeout(() => {
+              card.style.transition = 'opacity 0.4s ease';
+              card.style.opacity = '1';
+            }, 30);
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Smooth reset scroll to start when filter changes
+        rail.scrollTo({ left: 0, behavior: 'smooth' });
+        setTimeout(updateRailState, 350);
       });
     });
-  });
+  }
+
+  // Initial state setup
+  updateRailState();
 }
 
 /**
