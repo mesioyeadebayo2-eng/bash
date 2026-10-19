@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test-browser.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}

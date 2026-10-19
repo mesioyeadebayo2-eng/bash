@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUREVANT | Luxury Estates &amp; Residences</title>
+  <meta name="description" content="Discover exceptional homes, distinctive properties, and personal real estate guidance with AUREVANT.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AUREVANT | Luxury Estates &amp; Residences">
+  <meta property="og:description" content="Discover exceptional homes, distinctive properties, and personal real estate guidance with AUREVANT.">
+  <meta property="og:image" content="https://framerusercontent.com/images/yRj5RDXFvkoO8qv1iYIHzeOaM.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://framerusercontent.com/images/ueg1prSjgdrKyMJwp82LXJPgz0.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="https://framerusercontent.com/images/KFDJyyoqP5YMzO8Y57cc1bVs.png" media="(prefers-color-scheme: dark)">
+
+  <!-- Google Fonts: Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="main-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Aurevant Home">
+        <span class="logo-icon"></span>
+        <span class="logo-text">aurevant</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#properties" class="nav-link">Properties</a>
+        <a href="#signature" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#journal" class="nav-link">Journal</a>
+      </nav>
+
+      <div class="nav-right">
+        <div class="time-pill" id="live-time-pill" title="Current Location Time">
+          <span class="time-day" id="time-day">MON 19 OCT</span>
+          <span class="time-sep">\</span>
+          <span class="time-clock" id="time-clock">11:12</span>
+          <span class="time-sep">\</span>
+          <span class="time-city">NEW YORK</span>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-nav" id="nav-book-viewing-btn">Book a Viewing</a>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-links">
+      <a href="#properties" class="mobile-link">Properties</a>
+      <a href="#signature" class="mobile-link">Projects</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#journal" class="mobile-link">Journal</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+    <div class="mobile-drawer-cta">
+      <a href="#contact" class="btn btn-primary btn-block">Book a Viewing</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-container">
+        <img 
+          src="https://framerusercontent.com/images/6cPgFmSEJzKjwZhGDaOlPKyc.jpg?width=2200&height=1711" 
+          alt="Luxury architectural residence at dusk" 
+          class="hero-bg-image"
+          loading="eager"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-text-col">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span class="badge-text">LUXURY ESTATES &amp; RESIDENCES</span>
+          </div>
+
+          <h1 class="hero-title">Find a place that<br>feels entirely yours.</h1>
+
+          <p class="hero-subtitle">
+            AUREVANT brings together exceptional homes, considered architecture, and personal guidance to help you discover a property that reflects the way you want to live.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#properties" class="btn btn-primary" id="hero-explore-btn">Explore Properties</a>
+            <a href="#about" class="btn btn-secondary" id="hero-approach-btn">Our Approach</a>
+          </div>
+
+          <!-- Social Proof Avatars -->
+          <div class="hero-social-proof">
+            <div class="avatar-group">
+              <img src="https://framerusercontent.com/images/wTizYpWErbILif4XKn00leuOZK0.jpg?width=1300&height=1950" alt="Advisor portrait" class="avatar-img">
+              <img src="https://framerusercontent.com/images/Qi2N8jW5Pr9tkJEahIwA25lmMk.jpg?width=1300&height=1625" alt="Advisor portrait" class="avatar-img">
+              <img src="https://framerusercontent.com/images/E7kkmh5S9TledT4088Ocsd850.jpg?width=1300&height=1625" alt="Advisor portrait" class="avatar-img">
+            </div>
+            <span class="social-proof-text">A more personal perspective on luxury real estate.</span>
+          </div>
+        </div>
+
+        <!-- Floating Signature Card -->
+        <div class="hero-floating-card-wrapper">
+          <a href="#signature" class="floating-residence-card" id="hero-floating-card">
+            <div class="card-thumb">
+              <img src="https://framerusercontent.com/images/zUGxMz5cGoU2bqdnAF1YD0j2lk.jpg?width=2200&height=1467" alt="The Alder House thumbnail">
+            </div>
+            <div class="card-meta">
+              <span class="card-eyebrow">Signature residence</span>
+              <strong class="card-title">The Alder House</strong>
+              <span class="card-location"><span class="badge-dot"></span> Hillside Quarter</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Massive Watermark across bottom of hero -->
+      <div class="hero-watermark" aria-hidden="true">aurevant</div>
+    </section>
+
+    <!-- PERSPECTIVE SECTION -->
+    <section class="section perspective-section" id="about">
+      <div class="container">
+        <div class="perspective-grid">
+          <div class="perspective-left">
+            <span class="section-meta-label">THE AUREVANT PERSPECTIVE</span>
+            <span class="section-meta-year">&copy;2026</span>
+          </div>
+
+          <div class="perspective-right">
+            <h2 class="section-heading-large">More than an address. A way of living.</h2>
+            <div class="perspective-body">
+              <p>The right home is never just about square footage or a view. It is about light, atmosphere, possibility, and the feeling you have when you arrive.</p>
+              <p>We look beyond the listing to understand what makes a place meaningful—and help you find the one that feels right.</p>
+            </div>
+            <div class="perspective-cta">
+              <a href="#services" class="btn btn-secondary">Discover AUREVANT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinite Marquee Ticker -->
+      <div class="ticker-wrapper" aria-hidden="true">
+        <div class="ticker-track">
+          <span class="ticker-item">Luxury Estates</span>
+          <span class="ticker-dot">&bull;</span>
+          <span class="ticker-item">Private Residences</span>
+          <span class="ticker-dot">&bull;</span>
+          <span class="ticker-item">Considered Architecture</span>
+          <span class="ticker-dot">&bull;</span>
+          <span class="ticker-item">Personal Guidance</span>
+          <span class="ticker-dot">&bull;</span>
+          <span class="ticker-item">Luxury Estates</span>
+          <span class="ticker-dot">&bull;</span>
+          <span class="ticker-item">Private Residences</span>
+          <span class="ticker-dot">&bull;</span>
+          <span class="ticker-item">Considered Architecture</span>
+          <span class="ticker-dot">&bull;</span>
+          <span class="ticker-item">Personal Guidance</span>
+          <span class="ticker-dot">&bull;</span>
+        </div>
+      </div>
+
+      <!-- Luxury Interactive Gallery Carousel -->
+      <div class="container gallery-container">
+        <div class="gallery-slider" id="perspective-slider">
+          <div class="gallery-slides">
+            <div class="gallery-slide active">
+              <img src="https://framerusercontent.com/images/pN1278tTIxwaqGnOvdQMBm9nWMs.jpg?width=2200&height=1467" alt="Poolside illuminated villa terrace at twilight">
+            </div>
+            <div class="gallery-slide">
+              <img src="https://framerusercontent.com/images/6cPgFmSEJzKjwZhGDaOlPKyc.jpg?width=2200&height=1711" alt="Contemporary luxury glass estate exterior">
+            </div>
+            <div class="gallery-slide">
+              <img src="https://framerusercontent.com/images/zUGxMz5cGoU2bqdnAF1YD0j2lk.jpg?width=2200&height=1467" alt="Modern villa terrace with panoramic view">
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="gallery-controls">
+            <button class="slider-btn prev-btn" id="slider-prev" aria-label="Previous slide">&#x2190;</button>
+            <div class="slider-progress-bar">
+              <div class="slider-progress-indicator" id="slider-progress"></div>
+            </div>
+            <button class="slider-btn next-btn" id="slider-next" aria-label="Next slide">&#x2192;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE RESIDENCE FEATURE -->
+    <section class="section signature-section" id="signature">
+      <div class="container">
+        <div class="section-header-compact">
+          <span class="eyebrow-tag">SIGNATURE RESIDENCE</span>
+          <h2 class="section-title">Designed to belong.<br>Created to endure.</h2>
+          <p class="section-desc">
+            Explore a distinctive collection of residences shaped by thoughtful design, timeless materials, and a deep connection to their surroundings.
+          </p>
+        </div>
+
+        <div class="signature-card">
+          <div class="signature-image-wrapper">
+            <img 
+              src="https://framerusercontent.com/images/pN1278tTIxwaqGnOvdQMBm9nWMs.jpg?width=2200&height=1467" 
+              alt="The Alder House main residence"
+              class="signature-img"
+            >
+            <div class="signature-tags">
+              <span class="status-badge">For Sale</span>
+              <span class="location-badge">Hillside Quarter</span>
+            </div>
+            <div class="signature-overlay-info">
+              <h3 class="signature-name">The Alder House</h3>
+              <p class="signature-specs">Hillside Quarter &middot; Contemporary Residence &middot; 4 Beds &middot; 3,900 sq ft</p>
+              <a href="#properties" class="btn btn-primary btn-sm">View the Residence</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE COLLECTION (PROPERTIES GRID & FILTERING) -->
+    <section class="section collection-section" id="properties">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-tag">THE COLLECTION</span>
+          <h2 class="section-title">Exceptional places, thoughtfully selected.</h2>
+          <p class="section-desc">
+            From architectural statements to quiet retreats, our collection is curated for people who value character, quality, and a lasting sense of place.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Properties</button>
+            <button class="filter-tab" data-filter="contemporary" role="tab" aria-selected="false">Contemporary Homes</button>
+            <button class="filter-tab" data-filter="estate" role="tab" aria-selected="false">Private Estates</button>
+            <button class="filter-tab" data-filter="waterfront" role="tab" aria-selected="false">Waterfront Living</button>
+            <button class="filter-tab" data-filter="investment" role="tab" aria-selected="false">Investment Properties</button>
+          </div>
+        </div>
+
+        <!-- Property Grid -->
+        <div class="properties-grid" id="properties-grid">
+          <!-- Property 1 -->
+          <article class="property-card" data-category="contemporary estate">
+            <div class="property-image-container">
+              <img src="https://framerusercontent.com/images/bT30OLBaoYzJyoeSOctQfPTT0.jpg?width=1300&height=1950" alt="The Alder House" class="property-img">
+              <div class="property-badges">
+                <span class="status-pill sale">For Sale</span>
+                <span class="location-pill">Hillside Quarter</span>
+              </div>
+              <div class="property-price-tag">$4,850,000</div>
+            </div>
+            <div class="property-info">
+              <div class="property-header">
+                <h3 class="property-title">The Alder House</h3>
+                <span class="property-type">Contemporary Residence</span>
+              </div>
+              <p class="property-desc">A light-filled home with generous living spaces, natural finishes, and a seamless connection to the outdoors.</p>
+              <div class="property-specs">
+                <span>3,900 sq ft</span>
+                <span class="spec-dot">&bull;</span>
+                <span>4 Beds</span>
+                <span class="spec-dot">&bull;</span>
+                <span>3 Baths</span>
+              </div>
+              <div class="property-action">
+                <a href="#contact" class="property-link">View Property &#x2192;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 2 -->
+          <article class="property-card" data-category="contemporary investment">
+            <div class="property-image-container">
+              <img src="https://framerusercontent.com/images/fBdZu8xzzQ6b7LO3OHsBwblMqwo.jpg?width=1300&height=1950" alt="Maison Vale" class="property-img">
+              <div class="property-badges">
+                <span class="status-pill rent">For Rent</span>
+                <span class="location-pill">Old Town</span>
+              </div>
+              <div class="property-price-tag">$9,500 / month</div>
+            </div>
+            <div class="property-info">
+              <div class="property-header">
+                <h3 class="property-title">Maison Vale</h3>
+                <span class="property-type">City Residence</span>
+              </div>
+              <p class="property-desc">A refined urban home defined by clean lines, considered proportions, and effortless access to the city.</p>
+              <div class="property-specs">
+                <span>1,650 sq ft</span>
+                <span class="spec-dot">&bull;</span>
+                <span>2 Beds</span>
+                <span class="spec-dot">&bull;</span>
+                <span>2 Baths</span>
+              </div>
+              <div class="property-action">
+                <a href="#contact" class="property-link">View Property &#x2192;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 3 -->
+          <article class="property-card" data-category="waterfront estate">
+            <div class="property-image-container">
+              <img src="https://framerusercontent.com/images/Zxka7W1gRTQks3HVV1UBXVpZVU0.jpg?width=1300&height=1792" alt="The Coastline Residence" class="property-img">
+              <div class="property-badges">
+                <span class="status-pill soon">Coming Soon</span>
+                <span class="location-pill">North Shore</span>
+              </div>
+              <div class="property-price-tag">Price on request</div>
+            </div>
+            <div class="property-info">
+              <div class="property-header">
+                <h3 class="property-title">The Coastline Residence</h3>
+                <span class="property-type">Coastal Estate</span>
+              </div>
+              <p class="property-desc">A private retreat with open views, generous outdoor space, and a relaxed approach to modern living.</p>
+              <div class="property-specs">
+                <span>6,200 sq ft</span>
+                <span class="spec-dot">&bull;</span>
+                <span>5 Beds</span>
+                <span class="spec-dot">&bull;</span>
+                <span>5 Baths</span>
+              </div>
+              <div class="property-action">
+                <a href="#contact" class="property-link">View Property &#x2192;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 4 -->
+          <article class="property-card" data-category="estate">
+            <div class="property-image-container">
+              <img src="https://framerusercontent.com/images/JkpceeiFoE460QT7BQl8v9Q.jpg?width=1300&height=1950" alt="Halden Ridge" class="property-img">
+              <div class="property-badges">
+                <span class="status-pill sale">For Sale</span>
+                <span class="location-pill">Pine Valley</span>
+              </div>
+              <div class="property-price-tag">$7,200,000</div>
+            </div>
+            <div class="property-info">
+              <div class="property-header">
+                <h3 class="property-title">Halden Ridge</h3>
+                <span class="property-type">Private Estate</span>
+              </div>
+              <p class="property-desc">A hillside estate with long views, layered terraces, and complete privacy within easy reach of the city.</p>
+              <div class="property-specs">
+                <span>7,400 sq ft</span>
+                <span class="spec-dot">&bull;</span>
+                <span>5 Beds</span>
+                <span class="spec-dot">&bull;</span>
+                <span>6 Baths</span>
+              </div>
+              <div class="property-action">
+                <a href="#contact" class="property-link">View Property &#x2192;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 5 -->
+          <article class="property-card" data-category="contemporary investment">
+            <div class="property-image-container">
+              <img src="https://framerusercontent.com/images/e8mCjIu7E91PpwD119dWtKeE5w.jpg?width=1300&height=1733" alt="Cedar Hollow" class="property-img">
+              <div class="property-badges">
+                <span class="status-pill sale">For Sale</span>
+                <span class="location-pill">Pine Valley</span>
+              </div>
+              <div class="property-price-tag">$1,950,000</div>
+            </div>
+            <div class="property-info">
+              <div class="property-header">
+                <h3 class="property-title">Cedar Hollow</h3>
+                <span class="property-type">Woodland Retreat</span>
+              </div>
+              <p class="property-desc">A timber-clad retreat among the trees, designed for quiet weekends and slow mornings.</p>
+              <div class="property-specs">
+                <span>2,300 sq ft</span>
+                <span class="spec-dot">&bull;</span>
+                <span>3 Beds</span>
+                <span class="spec-dot">&bull;</span>
+                <span>2 Baths</span>
+              </div>
+              <div class="property-action">
+                <a href="#contact" class="property-link">View Property &#x2192;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 6 -->
+          <article class="property-card" data-category="waterfront investment">
+            <div class="property-image-container">
+              <img src="https://framerusercontent.com/images/zUGxMz5cGoU2bqdnAF1YD0j2lk.jpg?width=2200&height=1467" alt="Quay House" class="property-img">
+              <div class="property-badges">
+                <span class="status-pill sale">For Sale</span>
+                <span class="location-pill">Harbour District</span>
+              </div>
+              <div class="property-price-tag">$3,400,000</div>
+            </div>
+            <div class="property-info">
+              <div class="property-header">
+                <h3 class="property-title">Quay House</h3>
+                <span class="property-type">Waterfront Home</span>
+              </div>
+              <p class="property-desc">A waterside home with its own mooring, calm interiors, and evening light across the harbour.</p>
+              <div class="property-specs">
+                <span>3,100 sq ft</span>
+                <span class="spec-dot">&bull;</span>
+                <span>4 Beds</span>
+                <span class="spec-dot">&bull;</span>
+                <span>4 Baths</span>
+              </div>
+              <div class="property-action">
+                <a href="#contact" class="property-link">View Property &#x2192;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-footer-cta">
+          <a href="#properties" class="btn btn-secondary">View All Properties</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & STATS -->
+    <section class="section experience-section">
+      <div class="container">
+        <div class="experience-header">
+          <span class="eyebrow-tag">OUR EXPERIENCE</span>
+          <h2 class="section-title">Built on perspective.<br>Guided by trust.</h2>
+          <span class="disclaimer-note">Sample figures shown. Replace all figures with verified company data.</span>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number" data-target="18">18+</span>
+            <span class="stat-label">Years of combined experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="250">250+</span>
+            <span class="stat-label">Properties represented</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="14">14</span>
+            <span class="stat-label">Markets explored</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="99">99%</span>
+            <span class="stat-label">Client-first commitment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (ACCORDION / INTERACTIVE PROCESS) -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-tag">PERSONAL REAL ESTATE, REDEFINED</span>
+          <h2 class="section-title">Clear guidance at every step.</h2>
+          <p class="section-desc">
+            Whether you are searching for a new home, preparing to sell, or considering your next investment, we bring thoughtful advice and attentive service to every decision.
+          </p>
+        </div>
+
+        <div class="services-list" id="services-accordion">
+          <!-- Service 01 -->
+          <div class="service-item active" data-service="01">
+            <div class="service-header">
+              <div class="service-num-wrap">
+                <span class="slash">/</span>
+                <span class="num">01</span>
+              </div>
+              <h3 class="service-title">Buying</h3>
+              <span class="service-toggle-icon">&#x2193;</span>
+            </div>
+            <div class="service-body">
+              <p class="service-tagline">Find a home that fits your life and your ambitions.</p>
+              <div class="service-details">
+                <strong class="details-heading">What’s included</strong>
+                <ul class="details-list">
+                  <li>A clear brief shaped around how you live.</li>
+                  <li>A considered shortlist of relevant homes.</li>
+                  <li>Support through viewings, offers, and next steps.</li>
+                </ul>
+                <a href="#contact" class="btn btn-secondary btn-sm">Buy with AUREVANT</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="service-item" data-service="02">
+            <div class="service-header">
+              <div class="service-num-wrap">
+                <span class="slash">/</span>
+                <span class="num">02</span>
+              </div>
+              <h3 class="service-title">Selling</h3>
+              <span class="service-toggle-icon">&#x2193;</span>
+            </div>
+            <div class="service-body">
+              <p class="service-tagline">Positioning your property with discretion, refined marketing, and deep market reach.</p>
+              <div class="service-details">
+                <strong class="details-heading">What’s included</strong>
+                <ul class="details-list">
+                  <li>Discreet and bespoke property representation.</li>
+                  <li>Editorial grade photography, film, and architectural storytelling.</li>
+                  <li>Targeted access to qualified domestic and international buyers.</li>
+                </ul>
+                <a href="#contact" class="btn btn-secondary btn-sm">Sell with AUREVANT</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="service-item" data-service="03">
+            <div class="service-header">
+              <div class="service-num-wrap">
+                <span class="slash">/</span>
+                <span class="num">03</span>
+              </div>
+              <h3 class="service-title">Property Advisory</h3>
+              <span class="service-toggle-icon">&#x2193;</span>
+            </div>
+            <div class="service-body">
+              <p class="service-tagline">Objective counsel on valuations, market trends, and portfolio timing.</p>
+              <div class="service-details">
+                <strong class="details-heading">What’s included</strong>
+                <ul class="details-list">
+                  <li>In-depth market comparative intelligence and asset valuations.</li>
+                  <li>Architectural consultation on renovation and potential value unlock.</li>
+                  <li>Transaction structuring and trusted legal advisor coordination.</li>
+                </ul>
+                <a href="#contact" class="btn btn-secondary btn-sm">Consult an Advisor</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 04 -->
+          <div class="service-item" data-service="04">
+            <div class="service-header">
+              <div class="service-num-wrap">
+                <span class="slash">/</span>
+                <span class="num">04</span>
+              </div>
+              <h3 class="service-title">Investment</h3>
+              <span class="service-toggle-icon">&#x2193;</span>
+            </div>
+            <div class="service-body">
+              <p class="service-tagline">Strategic acquisitions identifying high-potential residential and estate assets.</p>
+              <div class="service-details">
+                <strong class="details-heading">What’s included</strong>
+                <ul class="details-list">
+                  <li>Off-market acquisition sourcing across key prime markets.</li>
+                  <li>Capital growth and rental yield projection models.</li>
+                  <li>Full lifecycle advisory from acquisition to asset realization.</li>
+                </ul>
+                <a href="#contact" class="btn btn-secondary btn-sm">Explore Investments</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-footer-cta">
+          <a href="#services" class="btn btn-secondary">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY AUREVANT -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="why-header-grid">
+          <div>
+            <span class="eyebrow-tag">WHY AUREVANT</span>
+            <h2 class="section-title">A more thoughtful standard of service.</h2>
+            <p class="section-desc">Local knowledge, a considered eye, and guidance that stays with you from first viewing to final signature.</p>
+          </div>
+          <div class="why-header-cta">
+            <a href="#contact" class="btn btn-secondary">Talk to an Advisor</a>
+          </div>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-card-icon">01</span>
+            <h3 class="why-card-title">Personal by design</h3>
+            <p class="why-card-desc">Your priorities shape the process from the first conversation.</p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card-icon">02</span>
+            <h3 class="why-card-title">Curated with intention</h3>
+            <p class="why-card-desc">Every property is considered for its quality, character, and potential.</p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card-icon">03</span>
+            <h3 class="why-card-title">Grounded in insight</h3>
+            <p class="why-card-desc">Local knowledge and a broader market perspective inform our advice.</p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card-icon">04</span>
+            <h3 class="why-card-title">Present at every step</h3>
+            <p class="why-card-desc">Clear communication and considered guidance, from first viewing to final signature.</p>
+          </div>
+        </div>
+
+        <!-- Category Pills Bar -->
+        <div class="category-pills-bar">
+          <span class="cat-pill">Residence</span>
+          <span class="cat-pill">Villa</span>
+          <span class="cat-pill">Private Estate</span>
+          <span class="cat-pill">Waterfront</span>
+          <span class="cat-pill">Penthouse</span>
+          <span class="cat-pill">Townhouse</span>
+          <span class="cat-pill">Retreat</span>
+          <span class="cat-pill">Development</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATMOSPHERIC BANNER -->
+    <section class="section quote-banner-section">
+      <div class="container">
+        <div class="quote-banner-card">
+          <img 
+            src="https://framerusercontent.com/images/fi0vM6MOliKstJxNOMyOUSZXlYg.jpg?width=2200&height=1467" 
+            alt="Warm dining room interior with natural sunlight" 
+            class="quote-banner-bg"
+          >
+          <div class="quote-banner-overlay"></div>
+          <div class="quote-banner-content">
+            <h2 class="quote-banner-title">The best homes make room for what matters.</h2>
+            <p class="quote-banner-text">
+              Slow mornings. Open spaces. Materials that grow more beautiful with time. We believe a home should support the life you want to lead—not simply impress from the outside.
+            </p>
+            <div class="quote-banner-cta">
+              <a href="#properties" class="btn btn-primary">Find Your Place</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIAL -->
+    <section class="section testimonial-section">
+      <div class="container">
+        <div class="testimonial-grid">
+          <div class="testimonial-left">
+            <span class="eyebrow-tag">CLIENT WORDS</span>
+            <blockquote class="testimonial-quote">
+              “AUREVANT made an important decision feel clear and personal. Every detail was handled with care, and we always felt understood.”
+            </blockquote>
+            <div class="testimonial-author">
+              <strong class="author-name">[Client Name]</strong>
+              <span class="author-role">[Buyer / Seller]</span>
+            </div>
+            <p class="testimonial-note">Use only a genuine, approved testimonial before publishing.</p>
+          </div>
+
+          <div class="testimonial-right">
+            <div class="testimonial-image-card">
+              <img src="https://framerusercontent.com/images/niMyPHzsDd2pd6Ebncyt1KKDA.jpg?width=1300&height=1300" alt="Client residential terrace" class="testimonial-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILT FOR TOMORROW -->
+    <section class="section tomorrow-section">
+      <div class="container">
+        <div class="tomorrow-grid">
+          <div class="tomorrow-text">
+            <span class="eyebrow-tag">BUILT FOR TOMORROW</span>
+            <h2 class="section-title">Better living begins with better choices.</h2>
+            <p class="section-desc">
+              We value homes that make thoughtful use of space, materials, energy, and their natural surroundings. From enduring architecture to efficient systems, we look for details that contribute to a more considered way of living.
+            </p>
+            <a href="#about" class="btn btn-secondary">Our Approach to Living</a>
+
+            <div class="tomorrow-pillars">
+              <div class="pillar-item">
+                <h3 class="pillar-title">Thoughtful Architecture</h3>
+                <p class="pillar-desc">Spaces shaped around light, flow, and everyday life.</p>
+              </div>
+
+              <div class="pillar-item">
+                <h3 class="pillar-title">Material Integrity</h3>
+                <p class="pillar-desc">Natural textures and finishes chosen for lasting appeal.</p>
+              </div>
+
+              <div class="pillar-item">
+                <h3 class="pillar-title">Energy Awareness</h3>
+                <p class="pillar-desc">Features that can support more efficient living.</p>
+              </div>
+
+              <div class="pillar-item">
+                <h3 class="pillar-title">Connection to Nature</h3>
+                <p class="pillar-desc">Landscapes and outdoor spaces that invite balance.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tomorrow-visual">
+            <div class="tomorrow-image-card">
+              <img src="https://framerusercontent.com/images/OCHKql6SCbNGxcbPMlrmLHU48.jpg?width=2200&height=1467" alt="Modern sustainable architecture nestled in native landscape" class="tomorrow-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE AUREVANT JOURNAL -->
+    <section class="section journal-section" id="journal">
+      <div class="container">
+        <div class="journal-header-wrap">
+          <div>
+            <span class="eyebrow-tag">THE AUREVANT JOURNAL</span>
+            <h2 class="section-title">Perspectives on property and place.</h2>
+            <p class="section-desc">Ideas, market perspectives, and design stories for people who see a home as more than an investment.</p>
+          </div>
+          <div>
+            <a href="#journal" class="btn btn-secondary">Read the Journal</a>
+          </div>
+        </div>
+
+        <div class="journal-grid">
+          <!-- Article 1 -->
+          <article class="journal-card">
+            <div class="journal-img-wrap">
+              <img src="https://framerusercontent.com/images/jaHdaakedZ96uks1w8xjuSOq5s.jpg?width=2200&height=1466" alt="Natural stone and wood architecture" class="journal-img">
+            </div>
+            <div class="journal-content">
+              <div class="journal-meta">
+                <span class="journal-cat">Design &amp; Living</span>
+                <span class="spec-dot">&bull;</span>
+                <span class="journal-read">6 min read</span>
+              </div>
+              <h3 class="journal-title">The Quiet Luxury of Natural Materials</h3>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="journal-card">
+            <div class="journal-img-wrap">
+              <img src="https://framerusercontent.com/images/4qyiwKTJw8Xa4yIOb4UDR9F1QWk.jpg?width=2200&height=1467" alt="Modern concrete and glass home" class="journal-img">
+            </div>
+            <div class="journal-content">
+              <div class="journal-meta">
+                <span class="journal-cat">Architecture</span>
+                <span class="spec-dot">&bull;</span>
+                <span class="journal-read">5 min read</span>
+              </div>
+              <h3 class="journal-title">What Makes a Home Timeless?</h3>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="journal-card">
+            <div class="journal-img-wrap">
+              <img src="https://framerusercontent.com/images/Du3JlReP6L6ka5hLvqRLkRwGjfs.jpg?width=2200&height=1650" alt="Architectural blueprint and interior view" class="journal-img">
+            </div>
+            <div class="journal-content">
+              <div class="journal-meta">
+                <span class="journal-cat">Buying</span>
+                <span class="spec-dot">&bull;</span>
+                <span class="journal-read">7 min read</span>
+              </div>
+              <h3 class="journal-title">A Thoughtful Guide to Your Next Property</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL GET IN TOUCH CTA -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="cta-banner-card">
+          <img 
+            src="https://framerusercontent.com/images/eFoN6qMhYcWTxx1joKkhuH3sA.jpg?width=2200&height=1467" 
+            alt="Panoramic city skyline at dusk" 
+            class="cta-banner-bg"
+          >
+          <div class="cta-banner-overlay"></div>
+          <div class="cta-banner-content">
+            <div class="badge-pill">
+              <span class="badge-dot"></span>
+              <span class="badge-text">GET IN TOUCH</span>
+            </div>
+            <h2 class="cta-banner-title">Your next chapter starts<br>with a conversation.</h2>
+            <p class="cta-banner-desc">
+              Tell us what you are looking for. We’ll help you explore the possibilities with clarity, discretion, and care.
+            </p>
+            <div class="cta-banner-actions">
+              <a href="mailto:hello@aurevant.com" class="btn btn-primary" id="cta-contact-btn">Talk to a Property Advisor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Aurevant Home">
+            <span class="logo-icon"></span>
+            <span class="logo-text">aurevant</span>
+          </a>
+        </div>
+        <div class="footer-nav">
+          <a href="#properties">Properties</a>
+          <a href="#signature">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#journal">Journal</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Book a Viewing</a>
+        </div>
+      </div>
+
+      <div class="footer-middle-grid">
+        <div class="footer-col">
+          <p class="footer-label">All rights reserved.</p>
+          <p class="footer-val">&copy;2026 AUREVANT</p>
+          <p class="footer-val"><a href="mailto:hello@aurevant.com">hello@aurevant.com</a></p>
+          <p class="footer-val"><a href="tel:+10000000000">+1 (000) 000-0000</a></p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-label">Office</p>
+          <p class="footer-val">[Street Address], [City, Country]</p>
+          <p class="footer-val">Monday–Friday, [Opening Time]–[Closing Time]</p>
+        </div>
+
+        <div class="footer-col footer-col-links">
+          <div class="footer-socials">
+            <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+            <span class="sep">//</span>
+            <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <span class="sep">//</span>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copyright">COPYRIGHT &copy; AUREVANT. LUXURY ESTATES &amp; RESIDENCES</span>
+        <a href="#hero" class="back-to-top" id="back-to-top-btn">BACK TO TOP &#x2191;</a>
+      </div>
+
+      <!-- Giant Bottom Brand Watermark -->
+      <div class="footer-watermark" aria-hidden="true">aurevant</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

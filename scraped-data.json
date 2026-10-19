@@ -1,0 +1,742 @@
+{
+  "title": "AUREVANT | Luxury Estates & Residences",
+  "images": [
+    {
+      "src": "https://framerusercontent.com/images/6cPgFmSEJzKjwZhGDaOlPKyc.jpg?width=2200&height=1711",
+      "alt": "",
+      "width": 1440,
+      "height": 1120,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/wTizYpWErbILif4XKn00leuOZK0.jpg?width=1300&height=1950",
+      "alt": "",
+      "width": 34,
+      "height": 51,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/Qi2N8jW5Pr9tkJEahIwA25lmMk.jpg?width=1300&height=1625",
+      "alt": "",
+      "width": 33,
+      "height": 42,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/E7kkmh5S9TledT4088Ocsd850.jpg?width=1300&height=1625",
+      "alt": "",
+      "width": 33,
+      "height": 42,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/zUGxMz5cGoU2bqdnAF1YD0j2lk.jpg?width=2200&height=1467",
+      "alt": "",
+      "width": 440,
+      "height": 293,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/pN1278tTIxwaqGnOvdQMBm9nWMs.jpg?width=2200&height=1467",
+      "alt": "",
+      "width": 1376,
+      "height": 917,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/zUGxMz5cGoU2bqdnAF1YD0j2lk.jpg?width=2200&height=1467",
+      "alt": "",
+      "width": 440,
+      "height": 293,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/bT30OLBaoYzJyoeSOctQfPTT0.jpg?width=1300&height=1950",
+      "alt": "",
+      "width": 440,
+      "height": 660,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/fBdZu8xzzQ6b7LO3OHsBwblMqwo.jpg?width=1300&height=1950",
+      "alt": "",
+      "width": 440,
+      "height": 660,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/Zxka7W1gRTQks3HVV1UBXVpZVU0.jpg?width=1300&height=1792",
+      "alt": "",
+      "width": 440,
+      "height": 607,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/JkpceeiFoE460QT7BQl8v9Q.jpg?width=1300&height=1950",
+      "alt": "",
+      "width": 440,
+      "height": 660,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/e8mCjIu7E91PpwD119dWtKeE5w.jpg?width=1300&height=1733",
+      "alt": "",
+      "width": 440,
+      "height": 586,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/fi0vM6MOliKstJxNOMyOUSZXlYg.jpg?width=2200&height=1467",
+      "alt": "",
+      "width": 881,
+      "height": 588,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/niMyPHzsDd2pd6Ebncyt1KKDA.jpg?width=1300&height=1300",
+      "alt": "",
+      "width": 300,
+      "height": 300,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/OCHKql6SCbNGxcbPMlrmLHU48.jpg?width=2200&height=1467",
+      "alt": "",
+      "width": 1344,
+      "height": 896,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/5D4eAQAzibpZfvgCZzsNwBY9LU.jpg?width=1300&height=1300",
+      "alt": "",
+      "width": 55,
+      "height": 55,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/jaHdaakedZ96uks1w8xjuSOq5s.jpg?width=2200&height=1466",
+      "alt": "",
+      "width": 604,
+      "height": 402,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/4qyiwKTJw8Xa4yIOb4UDR9F1QWk.jpg?width=2200&height=1467",
+      "alt": "",
+      "width": 442,
+      "height": 294,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/Du3JlReP6L6ka5hLvqRLkRwGjfs.jpg?width=2200&height=1650",
+      "alt": "",
+      "width": 442,
+      "height": 331,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/m2F1MiHW0DtGrjUrbTYU8IdBbzw.jpg?width=2200&height=1467",
+      "alt": "",
+      "width": 442,
+      "height": 294,
+      "className": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/eFoN6qMhYcWTxx1joKkhuH3sA.jpg?width=2200&height=1467",
+      "alt": "",
+      "width": 1376,
+      "height": 917,
+      "className": ""
+    }
+  ],
+  "bgImages": [],
+  "links": [
+    {
+      "text": "aurevant",
+      "href": "https://aurevant.framer.website/"
+    },
+    {
+      "text": "Properties",
+      "href": "https://aurevant.framer.website/properties"
+    },
+    {
+      "text": "Projects",
+      "href": "https://aurevant.framer.website/projects"
+    },
+    {
+      "text": "Services",
+      "href": "https://aurevant.framer.website/services"
+    },
+    {
+      "text": "About",
+      "href": "https://aurevant.framer.website/about"
+    },
+    {
+      "text": "Journal",
+      "href": "https://aurevant.framer.website/journal"
+    },
+    {
+      "text": "Book a Viewing\n\nBook a Viewing",
+      "href": "https://aurevant.framer.website/book"
+    },
+    {
+      "text": "Explore Properties\n\nExplore Properties",
+      "href": "https://aurevant.framer.website/properties"
+    },
+    {
+      "text": "Our Approach\n\nOur Approach",
+      "href": "https://aurevant.framer.website/about"
+    },
+    {
+      "text": "Signature residence\n\nThe Alder House\n\nHillside Quarter",
+      "href": "https://aurevant.framer.website/properties/the-alder-house"
+    },
+    {
+      "text": "Discover AUREVANT\n\nDiscover AUREVANT",
+      "href": "https://aurevant.framer.website/about"
+    },
+    {
+      "text": "View the Residence\n\nView the Residence",
+      "href": "https://aurevant.framer.website/properties/the-alder-house"
+    },
+    {
+      "text": "For Sale\n\nThe Alder House\n\nHillside Quarter\n\n$4,850,000\n\nThe Alder House\n\nContemporary Residence\n\nView Property\n\nA light-filled home with generous living spaces, natural finishes, and a seamless connection to the outdoors.\n\n3,900 sq ft\n\n4 Beds\n\n3 Baths",
+      "href": "https://aurevant.framer.website/properties/the-alder-house"
+    },
+    {
+      "text": "For Rent\n\nMaison Vale\n\nOld Town\n\n$9,500 / month\n\nMaison Vale\n\nCity Residence\n\nView Property\n\nA refined urban home defined by clean lines, considered proportions, and effortless access to the city.\n\n1,650 sq ft\n\n2 Beds\n\n2 Baths",
+      "href": "https://aurevant.framer.website/properties/maison-vale"
+    },
+    {
+      "text": "Coming Soon\n\nThe Coastline Residence\n\nNorth Shore\n\nPrice on request\n\nThe Coastline Residence\n\nCoastal Estate\n\nView Property\n\nA private retreat with open views, generous outdoor space, and a relaxed approach to modern living.\n\n6,200 sq ft\n\n5 Beds\n\n5 Baths",
+      "href": "https://aurevant.framer.website/properties/the-coastline-residence"
+    },
+    {
+      "text": "For Sale\n\nHalden Ridge\n\nPine Valley\n\n$7,200,000\n\nHalden Ridge\n\nPrivate Estate\n\nView Property\n\nA hillside estate with long views, layered terraces, and complete privacy within easy reach of the city.\n\n7,400 sq ft\n\n5 Beds\n\n6 Baths",
+      "href": "https://aurevant.framer.website/properties/halden-ridge"
+    },
+    {
+      "text": "For Sale\n\nCedar Hollow\n\nPine Valley\n\n$1,950,000\n\nCedar Hollow\n\nWoodland Retreat\n\nView Property\n\nA timber-clad retreat among the trees, designed for quiet weekends and slow mornings.\n\n2,300 sq ft\n\n3 Beds\n\n2 Baths",
+      "href": "https://aurevant.framer.website/properties/cedar-hollow"
+    },
+    {
+      "text": "For Sale\n\nQuay House\n\nHarbour District\n\n$3,400,000\n\nQuay House\n\nWaterfront Home\n\nView Property\n\nA waterside home with its own mooring, calm interiors, and evening light across the harbour.\n\n3,100 sq ft\n\n4 Beds\n\n4 Baths",
+      "href": "https://aurevant.framer.website/properties/quay-house"
+    },
+    {
+      "text": "View All Properties\n\nView All Properties",
+      "href": "https://aurevant.framer.website/properties"
+    },
+    {
+      "text": "Buy with AUREVANT\n\nBuy with AUREVANT",
+      "href": "https://aurevant.framer.website/services"
+    },
+    {
+      "text": "Explore Our Services\n\nExplore Our Services",
+      "href": "https://aurevant.framer.website/services"
+    },
+    {
+      "text": "Talk to an Advisor\n\nTalk to an Advisor",
+      "href": "https://aurevant.framer.website/contact"
+    },
+    {
+      "text": "Find Your Place\n\nFind Your Place",
+      "href": "https://aurevant.framer.website/properties"
+    },
+    {
+      "text": "Our Approach to Living\n\nOur Approach to Living",
+      "href": "https://aurevant.framer.website/about"
+    },
+    {
+      "text": "Read the Journal\n\nRead the Journal",
+      "href": "https://aurevant.framer.website/journal"
+    },
+    {
+      "text": "Design & Living\n\nThe Quiet Luxury of Natural Materials\n\n6 min read",
+      "href": "https://aurevant.framer.website/journal/the-quiet-luxury-of-natural-materials"
+    },
+    {
+      "text": "Architecture\n\nWhat Makes a Home Timeless?\n\n5 min read",
+      "href": "https://aurevant.framer.website/journal/what-makes-a-home-timeless"
+    },
+    {
+      "text": "Buying\n\nA Thoughtful Guide to Your Next Property\n\n7 min read",
+      "href": "https://aurevant.framer.website/journal/a-thoughtful-guide-to-your-next-property"
+    },
+    {
+      "text": "Talk to a Property Advisor\n\nTalk to a Property Advisor",
+      "href": "https://aurevant.framer.website/contact"
+    },
+    {
+      "text": "Properties",
+      "href": "https://aurevant.framer.website/properties"
+    },
+    {
+      "text": "Projects",
+      "href": "https://aurevant.framer.website/projects"
+    },
+    {
+      "text": "Services",
+      "href": "https://aurevant.framer.website/services"
+    },
+    {
+      "text": "About",
+      "href": "https://aurevant.framer.website/about"
+    },
+    {
+      "text": "Journal",
+      "href": "https://aurevant.framer.website/journal"
+    },
+    {
+      "text": "Contact",
+      "href": "https://aurevant.framer.website/contact"
+    },
+    {
+      "text": "Book a Viewing",
+      "href": "https://aurevant.framer.website/book"
+    },
+    {
+      "text": "hello@aurevant.com",
+      "href": "mailto:hello@aurevant.com"
+    },
+    {
+      "text": "+1 (000) 000-0000",
+      "href": "tel:+10000000000"
+    },
+    {
+      "text": "X",
+      "href": "https://x.com/"
+    },
+    {
+      "text": "Instagram",
+      "href": "https://instagram.com/"
+    },
+    {
+      "text": "LinkedIn",
+      "href": "https://linkedin.com/"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://aurevant.framer.website/privacy-policy"
+    },
+    {
+      "text": "Terms & Conditions",
+      "href": "https://aurevant.framer.website/terms"
+    },
+    {
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "href": "https://www.framer.com/"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Find a place that feels entirely yours."
+    },
+    {
+      "tag": "H2",
+      "text": "More than an address. A way of living."
+    },
+    {
+      "tag": "H2",
+      "text": "Designed to belong. Created to endure."
+    },
+    {
+      "tag": "H3",
+      "text": "The Alder House"
+    },
+    {
+      "tag": "H2",
+      "text": "Exceptional places, thoughtfully selected."
+    },
+    {
+      "tag": "H3",
+      "text": "The Alder House"
+    },
+    {
+      "tag": "H3",
+      "text": "Maison Vale"
+    },
+    {
+      "tag": "H3",
+      "text": "The Coastline Residence"
+    },
+    {
+      "tag": "H3",
+      "text": "Halden Ridge"
+    },
+    {
+      "tag": "H3",
+      "text": "Cedar Hollow"
+    },
+    {
+      "tag": "H3",
+      "text": "Quay House"
+    },
+    {
+      "tag": "H2",
+      "text": "Built on perspective. Guided by trust."
+    },
+    {
+      "tag": "H2",
+      "text": "Clear guidance at every step."
+    },
+    {
+      "tag": "H3",
+      "text": "Buying"
+    },
+    {
+      "tag": "H3",
+      "text": "Selling"
+    },
+    {
+      "tag": "H3",
+      "text": "Property Advisory"
+    },
+    {
+      "tag": "H3",
+      "text": "Investment"
+    },
+    {
+      "tag": "H2",
+      "text": "A more thoughtful standard of service."
+    },
+    {
+      "tag": "H3",
+      "text": "Personal by design"
+    },
+    {
+      "tag": "H3",
+      "text": "Curated with intention"
+    },
+    {
+      "tag": "H3",
+      "text": "Grounded in insight"
+    },
+    {
+      "tag": "H3",
+      "text": "Present at every step"
+    },
+    {
+      "tag": "H2",
+      "text": "The best homes make room for what matters."
+    },
+    {
+      "tag": "H2",
+      "text": "Better living begins with better choices."
+    },
+    {
+      "tag": "H3",
+      "text": "Thoughtful Architecture"
+    },
+    {
+      "tag": "H3",
+      "text": "Material Integrity"
+    },
+    {
+      "tag": "H3",
+      "text": "Energy Awareness"
+    },
+    {
+      "tag": "H3",
+      "text": "Connection to Nature"
+    },
+    {
+      "tag": "H2",
+      "text": "Perspectives on property and place."
+    },
+    {
+      "tag": "H3",
+      "text": "The Quiet Luxury of Natural Materials"
+    },
+    {
+      "tag": "H3",
+      "text": "What Makes a Home Timeless?"
+    },
+    {
+      "tag": "H3",
+      "text": "A Thoughtful Guide to Your Next Property"
+    },
+    {
+      "tag": "H2",
+      "text": "Your next chapter starts with a conversation."
+    }
+  ],
+  "paragraphs": [
+    "aurevant",
+    "Properties",
+    "Projects",
+    "Services",
+    "About",
+    "Journal",
+    "Book a Viewing",
+    "Book a Viewing",
+    "LUXURY ESTATES & RESIDENCES",
+    "AUREVANT brings together exceptional homes, considered architecture, and personal guidance to help you discover a property that reflects the way you want to live.",
+    "Explore Properties",
+    "Explore Properties",
+    "Our Approach",
+    "Our Approach",
+    "A more personal perspective on luxury real estate.",
+    "Signature residence",
+    "The Alder House",
+    "Hillside Quarter",
+    "THE AUREVANT PERSPECTIVE",
+    "©2026",
+    "The right home is never just about square footage or a view. It is about light, atmosphere, possibility, and the feeling you have when you arrive.",
+    "We look beyond the listing to understand what makes a place meaningful—and help you find the one that feels right.",
+    "Discover AUREVANT",
+    "Discover AUREVANT",
+    "Luxury Estates",
+    "Private Residences",
+    "Considered Architecture",
+    "Personal Guidance",
+    "SIGNATURE RESIDENCE",
+    "Explore a distinctive collection of residences shaped by thoughtful design, timeless materials, and a deep connection to their surroundings.",
+    "For Sale",
+    "Hillside Quarter",
+    "Hillside Quarter · Contemporary Residence · 4 Beds · 3,900 sq ft",
+    "View the Residence",
+    "View the Residence",
+    "THE COLLECTION",
+    "From architectural statements to quiet retreats, our collection is curated for people who value character, quality, and a lasting sense of place.",
+    "All Properties",
+    "Contemporary Homes",
+    "Private Estates",
+    "Waterfront Living",
+    "Investment Properties",
+    "For Sale",
+    "Hillside Quarter",
+    "$4,850,000",
+    "The Alder House",
+    "Contemporary Residence",
+    "View Property",
+    "A light-filled home with generous living spaces, natural finishes, and a seamless connection to the outdoors.",
+    "3,900 sq ft",
+    "4 Beds",
+    "3 Baths",
+    "For Rent",
+    "Old Town",
+    "$9,500 / month",
+    "Maison Vale",
+    "City Residence",
+    "View Property",
+    "A refined urban home defined by clean lines, considered proportions, and effortless access to the city.",
+    "1,650 sq ft",
+    "2 Beds",
+    "2 Baths",
+    "Coming Soon",
+    "North Shore",
+    "Price on request",
+    "The Coastline Residence",
+    "Coastal Estate",
+    "View Property",
+    "A private retreat with open views, generous outdoor space, and a relaxed approach to modern living.",
+    "6,200 sq ft",
+    "5 Beds",
+    "5 Baths",
+    "For Sale",
+    "Pine Valley",
+    "$7,200,000",
+    "Halden Ridge",
+    "Private Estate",
+    "View Property",
+    "A hillside estate with long views, layered terraces, and complete privacy within easy reach of the city.",
+    "7,400 sq ft",
+    "5 Beds",
+    "6 Baths",
+    "For Sale",
+    "Pine Valley",
+    "$1,950,000",
+    "Cedar Hollow",
+    "Woodland Retreat",
+    "View Property",
+    "A timber-clad retreat among the trees, designed for quiet weekends and slow mornings.",
+    "2,300 sq ft",
+    "3 Beds",
+    "2 Baths",
+    "For Sale",
+    "Harbour District",
+    "$3,400,000",
+    "Quay House",
+    "Waterfront Home",
+    "View Property",
+    "A waterside home with its own mooring, calm interiors, and evening light across the harbour.",
+    "3,100 sq ft",
+    "4 Beds",
+    "4 Baths",
+    "View All Properties",
+    "View All Properties",
+    "OUR EXPERIENCE",
+    "Sample figures shown. Replace all figures with verified company data.",
+    "Years of combined experience",
+    "Properties represented",
+    "Markets explored",
+    "Client-first commitment",
+    "PERSONAL REAL ESTATE, REDEFINED",
+    "Whether you are searching for a new home, preparing to sell, or considering your next investment, we bring thoughtful advice and attentive service to every decision.",
+    "/",
+    "01",
+    "What’s included",
+    "A clear brief shaped around how you live.",
+    "A considered shortlist of relevant homes.",
+    "Support through viewings, offers, and next steps.",
+    "Buy with AUREVANT",
+    "Buy with AUREVANT",
+    "Find a home that fits your life and your ambitions.",
+    "/",
+    "02",
+    "/",
+    "03",
+    "/",
+    "04",
+    "Explore Our Services",
+    "Explore Our Services",
+    "WHY AUREVANT",
+    "Local knowledge, a considered eye, and guidance that stays with you from first viewing to final signature.",
+    "Talk to an Advisor",
+    "Talk to an Advisor",
+    "Your priorities shape the process from the first conversation.",
+    "Every property is considered for its quality, character, and potential.",
+    "Local knowledge and a broader market perspective inform our advice.",
+    "Clear communication and considered guidance, from first viewing to final signature.",
+    "Residence",
+    "Villa",
+    "Private Estate",
+    "Waterfront",
+    "Penthouse",
+    "Townhouse",
+    "Retreat",
+    "Development",
+    "Slow mornings. Open spaces. Materials that grow more beautiful with time. We believe a home should support the life you want to lead—not simply impress from the outside.",
+    "Find Your Place",
+    "Find Your Place",
+    "CLIENT WORDS",
+    "“AUREVANT made an important decision feel clear and personal. Every detail was handled with care, and we always felt understood.”",
+    "[Client Name]",
+    "[Buyer / Seller]",
+    "Use only a genuine, approved testimonial before publishing.",
+    "BUILT FOR TOMORROW",
+    "We value homes that make thoughtful use of space, materials, energy, and their natural surroundings. From enduring architecture to efficient systems, we look for details that contribute to a more considered way of living.",
+    "Our Approach to Living",
+    "Our Approach to Living",
+    "Spaces shaped around light, flow, and everyday life.",
+    "Natural textures and finishes chosen for lasting appeal.",
+    "Features that can support more efficient living.",
+    "Landscapes and outdoor spaces that invite balance.",
+    "THE AUREVANT JOURNAL",
+    "Read the Journal",
+    "Read the Journal",
+    "Ideas, market perspectives, and design stories for people who see a home as more than an investment.",
+    "Design & Living",
+    "6 min read",
+    "Architecture",
+    "5 min read",
+    "Buying",
+    "7 min read",
+    "GET IN TOUCH",
+    "Tell us what you are looking for. We’ll help you explore the possibilities with clarity, discretion, and care.",
+    "Talk to a Property Advisor",
+    "Talk to a Property Advisor",
+    "Properties",
+    "Projects",
+    "Services",
+    "About",
+    "Journal",
+    "Contact",
+    "Book a Viewing",
+    "All rights reserved.",
+    "©2026 AUREVANT",
+    "hello@aurevant.com",
+    "+1 (000) 000-0000",
+    "Office",
+    "[Street Address], [City, Country]",
+    "Monday–Friday, [Opening Time]–[Closing Time]",
+    "X",
+    "//",
+    "Instagram",
+    "//",
+    "LinkedIn",
+    "Privacy Policy",
+    "Terms & Conditions",
+    "COPYRIGHT © AUREVANT. LUXURY ESTATES & RESIDENCES",
+    "BACK TO TOP",
+    "Create a free website with Framer, the website builder loved by startups, designers and agencies."
+  ],
+  "cssVars": {
+    "--token-b5af2fc8-b5e6-4ac9-afbc-1f9d542edd5d": "#0b0b0b",
+    "--token-c4c13d06-d588-4698-b9c9-625f324fa5f1": "#151515",
+    "--token-6a017f11-623d-4422-a55a-d191d1949bed": "#1c1c1c",
+    "--token-7abb6ccc-69a5-4b89-baf2-5d7c3585cb01": "#262626",
+    "--token-95dca8a8-1d4a-40f3-854e-bd555fdc8e52": "#fff",
+    "--token-d722e872-4848-4f8a-a299-4348d7a8bf4a": "#b9b9b9",
+    "--token-25463527-e524-42eb-bb82-031da885c2e9": "#8c8c8c",
+    "--token-83fe73eb-fd05-47d9-a782-91e75a9fa2e7": "#565656",
+    "--token-23eab4ee-81e8-4bd2-bf4c-5408d2fec50c": "#ffffff24",
+    "--token-6e292652-f97d-4744-b40a-9cc2bd42db5b": "#ffffff14",
+    "--token-351cc85f-0b77-4652-a26d-fdfd33629aa1": "#fff6",
+    "--token-07898f7f-5eea-45eb-9063-9f32e348d14e": "#ee2b24",
+    "--token-b70ba8d6-ecf8-4922-be67-8274e0cbe107": "#c8201a",
+    "--token-df8b886e-6288-48df-95b3-35d95c9cb438": "#0b0b0b",
+    "--token-d6d021c2-030a-468c-97ff-3f89c1839cde": "#ffffffd1",
+    "--text-decoration": "var(--framer-link-current-text-decoration-style,var(--framer-link-text-decoration-style,var(--framer-text-decoration-style,solid))) var(--framer-link-current-text-decoration,var(--framer-link-text-decoration,var(--framer-text-decoration,none))) var(--framer-link-current-text-decoration-color,var(--framer-link-text-decoration-color,var(--framer-text-decoration-color,currentcolor))) var(--framer-link-current-text-decoration-thickness,var(--framer-link-text-decoration-thickness,var(--framer-text-decoration-thickness,auto)))",
+    "--text-decoration-skip-ink": "var(--framer-link-current-text-decoration-skip-ink,var(--framer-link-text-decoration-skip-ink,var(--framer-text-decoration-skip-ink)))",
+    "--text-underline-offset": "var(--framer-link-current-text-decoration-offset,var(--framer-link-text-decoration-offset,var(--framer-text-decoration-offset)))",
+    "--font-family": "var(--framer-link-current-font-family,var(--framer-link-font-family,var(--framer-font-family)))",
+    "--font-style": "var(--framer-link-current-font-style,var(--framer-link-font-style,var(--framer-font-style)))",
+    "--font-weight": "var(--framer-link-current-font-weight,var(--framer-link-font-weight,var(--framer-font-weight)))",
+    "--text-color": "var(--framer-link-current-text-color,var(--framer-link-text-color,var(--framer-text-color)))",
+    "--letter-spacing": "var(--framer-letter-spacing)",
+    "--font-size": "var(--framer-link-current-font-size,var(--framer-link-font-size,var(--framer-font-size)))",
+    "--text-transform": "var(--framer-link-current-text-transform,var(--framer-link-text-transform,var(--framer-text-transform)))",
+    "--line-height": "var(--framer-line-height)",
+    "--framer-will-change-override": "none",
+    "--framer-will-change-filter-override": "none",
+    "--framer-font-family": "\"Manrope\", \"Manrope Placeholder\", sans-serif",
+    "--framer-font-style": "normal",
+    "--framer-font-weight": "400",
+    "--framer-text-color": "var(--token-d722e872-4848-4f8a-a299-4348d7a8bf4a)",
+    "--framer-font-size": "15.5px",
+    "--framer-letter-spacing": "-.02em",
+    "--framer-text-transform": "none",
+    "--framer-text-decoration": "none",
+    "--framer-text-decoration-style": "none",
+    "--framer-text-decoration-color": "none",
+    "--framer-text-decoration-thickness": "none",
+    "--framer-text-decoration-skip-ink": "none",
+    "--framer-text-decoration-offset": "none",
+    "--framer-line-height": "1.55em",
+    "--framer-text-alignment": "start",
+    "--framer-font-open-type-features": "\"blwf\" on, \"cv03\" on, \"cv04\" on, \"cv09\" on, \"cv11\" on",
+    "--framer-text-background-color": "initial",
+    "--framer-text-background-radius": "initial",
+    "--framer-text-background-corner-shape": "initial",
+    "--framer-text-background-padding": "initial",
+    "--list-style-type": "decimal",
+    "--font-variation-settings": "normal",
+    "--framer-link-current-text-color": "var(--token-95dca8a8-1d4a-40f3-854e-bd555fdc8e52)",
+    "--framer-link-current-text-decoration": "none",
+    "--framer-link-hover-text-color": "var(--token-07898f7f-5eea-45eb-9063-9f32e348d14e)",
+    "--framer-link-hover-text-decoration": "none",
+    "--framer-link-text-color": "var(--token-95dca8a8-1d4a-40f3-854e-bd555fdc8e52)",
+    "--framer-link-text-decoration": "none",
+    "--border-bottom-width": "1px",
+    "--border-color": "var(--token-351cc85f-0b77-4652-a26d-fdfd33629aa1)",
+    "--border-left-width": "1px",
+    "--border-right-width": "1px",
+    "--border-style": "solid",
+    "--border-top-width": "1px",
+    "--1m6trwb": "0",
+    "--21h8s6": "#ee2b24",
+    "--pgex8v": "1.5",
+    "--framer-font-family-bold": "\"Manrope\", \"Manrope Placeholder\", sans-serif",
+    "--framer-font-style-bold": "normal",
+    "--framer-font-variation-axes": "normal",
+    "--framer-font-weight-bold": "700",
+    "--framer-paragraph-spacing": "20px",
+    "--framer-text-stroke-color": "initial",
+    "--framer-text-stroke-width": "initial",
+    "--framer-text-wrap": "pretty"
+  },
+  "bodyText": "aurevant\n\nProperties\n\nProjects\n\nServices\n\nAbout\n\nJournal\n\nMON 19 OCT\n\\\n11:12\n\\\nNEW YORK\n\nBook a Viewing\n\nBook a Viewing\n\nLUXURY ESTATES & RESIDENCES\n\nFind a place that feels entirely yours.\n\nAUREVANT brings together exceptional homes, considered architecture, and personal guidance to help you discover a property that reflects the way you want to live.\n\nExplore Properties\n\nExplore Properties\n\nOur Approach\n\nOur Approach\n\nA more personal perspective on luxury real estate.\n\nSignature residence\n\nThe Alder House\n\nHillside Quarter\n\naurevant\n\nTHE AUREVANT PERSPECTIVE\n\n©2026\n\nMore than an address. A way of living.\n\nThe right home is never just about square footage or a view. It is about light, atmosphere, possibility, and the feeling you have when you arrive.\n\nWe look beyond the listing to understand what makes a place meaningful—and help you find the one that feels right.\n\nDiscover AUREVANT\n\nDiscover AUREVANT\n\nLuxury Estates\n\nPrivate Residences\n\nConsidered Architecture\n\nPersonal Guidance\n\nSIGNATURE RESIDENCE\n\nDesigned to belong. Created to endure.\n\nExplore a distinctive collection of residences shaped by thoughtful design, timeless materials, and a deep connection to their surroundings.\n\nFor Sale\n\nHillside Quarter\n\nThe Alder House\n\nHillside Quarter · Contemporary Residence · 4 Beds · 3,900 sq ft\n\nView the Residence\n\nView the Residence\n\nTHE COLLECTION\n\nExceptional places, thoughtfully selected.\n\nFrom architectural statements to quiet retreats, our collection is curated for people who value character, quality, and a lasting sense of place.\n\nAll Properties\n\nContemporary Homes\n\nPrivate Estates\n\nWaterfront Living\n\nInvestment Properties\n\nFor Sale\n\nThe Alder House\n\nHillside Quarter\n\n$4,850,000\n\nThe Alder House\n\nContemporary Residence\n\nView Property\n\nA light-filled home with generous living spaces, natural finishes, and a seamless connection to the outdoors.\n\n3,900 sq ft\n\n4 Beds\n\n3 Baths\n\nFor Rent\n\nMaison Vale\n\nOld Town\n\n$9,500 / month\n\nMaison Vale\n\nCity Residence\n\nView Property\n\nA refined urban home defined by clean lines, considered proportions, and effortless access to the city.\n\n1,650 sq ft\n\n2 Beds\n\n2 Baths\n\nComing Soon\n\nThe Coastline Residence\n\nNorth Shore\n\nPrice on request\n\nThe Coastline Residence\n\nCoastal Estate\n\nView Property\n\nA private retreat with open views, generous outdoor space, and a relaxed approach to modern living.\n\n6,200 sq ft\n\n5 Beds\n\n5 Baths\n\nFor Sale\n\nHalden Ridge\n\nPine Valley\n\n$7,200,000\n\nHalden Ridge\n\nPrivate Estate\n\nView Property\n\nA hillside estate with long views, layered terraces, and complete privacy within easy reach of the city.\n\n7,400 sq ft\n\n5 Beds\n\n6 Baths\n\nFor Sale\n\nCedar Hollow\n\nPine Valley\n\n$1,950,000\n\nCedar Hollow\n\nWoodland Retreat\n\nView Property\n\nA timber-clad retreat among the trees, designed for quiet weekends and slow mornings.\n\n2,300 sq ft\n\n3 Beds\n\n2 Baths\n\nFor Sale\n\nQuay House\n\nHarbour District\n\n$3,400,000\n\nQuay House\n\nWaterfront Home\n\nView Property\n\nA waterside home with its own mooring, calm interiors, and evening light across the harbour.\n\n3,100 sq ft\n\n4 Beds\n\n4 Baths\n\nView All Properties\n\nView All Properties\n\nOUR EXPERIENCE\n\nSample figures shown. Replace all figures with verified company data.\n\nBuilt on perspective. Guided by trust.\n0+\n\nYears of combined experience\n\n0+\n\nProperties represented\n\n0\n\nMarkets explored\n\n0%\n\nClient-first commitment\n\nPERSONAL REAL ESTATE, REDEFINED\n\nClear guidance at every step.\n\nWhether you are searching for a new home, preparing to sell, or considering your next investment, we bring thoughtful advice and attentive service to every decision.\n\n/\n\n01\n\nBuying\n\nWhat’s included\n\nA clear brief shaped around how you live.\n\nA considered shortlist of relevant homes.\n\nSupport through viewings, offers, and next steps.\n\nBuy with AUREVANT\n\nBuy with AUREVANT\n\nFind a home that fits your life and your ambitions.\n\n/\n\n02\n\nSelling\n\n/\n\n03\n\nProperty Advisory\n\n/\n\n04\n\nInvestment\n\nExplore Our Services\n\nExplore Our Services\n\nWHY AUREVANT\n\nA more thoughtful standard of service.\n\nLocal knowledge, a considered eye, and guidance that stays with you from first viewing to final signature.\n\nTalk to an Advisor\n\nTalk to an Advisor\n\nPersonal by design\n\nYour priorities shape the process from the first conversation.\n\nCurated with intention\n\nEvery property is considered for its quality, character, and potential.\n\nGrounded in insight\n\nLocal knowledge and a broader market perspective inform our advice.\n\nPresent at every step\n\nClear communication and considered guidance, from first viewing to final signature.\n\nResidence\n\nVilla\n\nPrivate Estate\n\nWaterfront\n\nPenthouse\n\nTownhouse\n\nRetreat\n\nDevelopment\n\nThe best homes make room for what matters.\n\nSlow mornings. Open spaces. Materials that grow more beautiful with time. We believe a home should support the life you want to lead—not simply impress from the outside.\n\nFind Your Place\n\nFind Your Place\n\nCLIENT WORDS\n\n“AUREVANT made an important decision feel clear and personal. Every detail was handled with care, and we always felt understood.”\n\n[Client Name]\n\n[Buyer / Seller]\n\nUse only a genuine, approved testimonial before publishing.\n\nBUILT FOR TOMORROW\n\nBetter living begins with better choices.\n\nWe value homes that make thoughtful use of space, materials, energy, and their natural surroundings. From enduring architecture to efficient systems, we look for details that contribute to a more considered way of living.\n\nOur Approach to Living\n\nOur Approach to Living\n\nThoughtful Architecture\n\nSpaces shaped around light, flow, and everyday life.\n\nMaterial Integrity\n\nNatural textures and finishes chosen for lasting appeal.\n\nEnergy Awareness\n\nFeatures that can support more efficient living.\n\nConnection to Nature\n\nLandscapes and outdoor spaces that invite balance.\n\nTHE AUREVANT JOURNAL\n\nPerspectives on property and place.\n\nRead the Journal\n\nRead the Journal\n\nIdeas, market perspectives, and design stories for people who see a home as more than an investment.\n\nDesign & Living\n\nThe Quiet Luxury of Natural Materials\n\n6 min read\n\nArchitecture\n\nWhat Makes a Home Timeless?\n\n5 min read\n\nBuying\n\nA Thoughtful Guide to Your Next Property\n\n7 min read\n\nGET IN TOUCH\n\nYour next chapter starts with a conversation.\n\nTell us what you are looking for. We’ll help you explore the possibilities with clarity, discretion, and care.\n\nTalk to a Property Advisor\n\nTalk to a Property Advisor\n\nProperties\n\nProjects\n\nServices\n\nAbout\n\nJournal\n\nContact\n\nBook a Viewing\n\nAll rights reserved.\n\n©2026 AUREVANT\n\nhello@aurevant.com\n\n+1 (000) 000-0000\n\nOffice\n\n[Street Address], [City, Country]\n\nMonday–Friday, [Opening Time]–[Closing Time]\n\nX\n\n//\n\nInstagram\n\n//\n\nLinkedIn\n\nPrivacy Policy\n\nTerms & Conditions\n\nCOPYRIGHT © AUREVANT. LUXURY ESTATES & RESIDENCES\n\nBACK TO TOP\n\naurevant\n\nCreate a free website with Framer, the website builder loved by startups, designers and agencies."
+}
