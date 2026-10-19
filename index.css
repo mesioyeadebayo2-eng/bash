@@ -354,11 +354,12 @@ button {
   position: relative;
   min-height: 100vh;
   padding-top: 150px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  z-index: 1;
 }
 
 .hero-bg-container {
@@ -367,7 +368,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -2;
+  z-index: 0;
 }
 
 .hero-bg-image {
@@ -375,7 +376,7 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  filter: brightness(0.72) contrast(1.05);
+  filter: brightness(0.85) contrast(1.05);
 }
 
 .hero-overlay {
@@ -386,11 +387,12 @@ button {
   bottom: 0;
   background: linear-gradient(
     180deg,
-    rgba(11, 11, 11, 0.5) 0%,
-    rgba(11, 11, 11, 0.2) 40%,
-    rgba(11, 11, 11, 0.85) 85%,
+    rgba(11, 11, 11, 0.45) 0%,
+    rgba(11, 11, 11, 0.15) 40%,
+    rgba(11, 11, 11, 0.6) 80%,
     var(--bg-main) 100%
   );
+  z-index: 1;
 }
 
 .hero-content {
@@ -530,15 +532,16 @@ button {
 
 /* Giant Watermark */
 .hero-watermark {
-  font-size: clamp(80px, 15vw, 210px);
+  font-size: clamp(100px, 17.5vw, 240px);
   font-weight: 800;
   letter-spacing: -0.05em;
-  color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
   text-align: center;
-  line-height: 0.75;
+  line-height: 0.72;
   user-select: none;
   pointer-events: none;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: -15px;
   position: relative;
   z-index: 2;
 }
